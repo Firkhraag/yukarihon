@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ce034387f7827b332dc58c1b8bf6985",
+    "revision": "4e771a4601c81c78e7f35d92740fbaee",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "91e4bdbadd70f4a8beb2",
-    "url": "/yukarihon/static/css/main.9004be2e.chunk.css"
+    "revision": "e080ab8ac600470ab094",
+    "url": "/yukarihon/static/css/main.37d2eeea.chunk.css"
   },
   {
     "revision": "c3238a66d35fc6ad2ae3",
     "url": "/yukarihon/static/js/2.918f56d6.chunk.js"
   },
   {
-    "revision": "91e4bdbadd70f4a8beb2",
-    "url": "/yukarihon/static/js/main.73409e75.chunk.js"
+    "revision": "e080ab8ac600470ab094",
+    "url": "/yukarihon/static/js/main.72e29499.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
     "url": "/yukarihon/static/js/runtime~main.c4e67a6f.js"
+  },
+  {
+    "revision": "1389f49a600213a6d723857f809f2867",
+    "url": "/yukarihon/static/media/CenturyGothicRegular.1389f49a.woff"
   },
   {
     "revision": "0754a11bba37314a6374aa26661cff0a",
@@ -64,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/nauchka.6b4f0dfc.svg"
   },
   {
-    "revision": "6001a3f8b4db64561bba16689df4bb10",
-    "url": "/yukarihon/static/media/seiran.6001a3f8.svg"
+    "revision": "c3468f0312d6386fa2e0ab82294a3dc0",
+    "url": "/yukarihon/static/media/seiran.c3468f03.svg"
   },
   {
     "revision": "be42de689f00322608342cfcdcc85876",
