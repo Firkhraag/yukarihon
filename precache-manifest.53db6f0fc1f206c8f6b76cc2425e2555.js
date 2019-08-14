@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e771a4601c81c78e7f35d92740fbaee",
+    "revision": "55a5e0b17864be01c71ac9a575b8c68f",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "e080ab8ac600470ab094",
-    "url": "/yukarihon/static/css/main.37d2eeea.chunk.css"
+    "revision": "bbc1bdc98cc73569c560",
+    "url": "/yukarihon/static/css/main.ed7df5b3.chunk.css"
   },
   {
     "revision": "c3238a66d35fc6ad2ae3",
     "url": "/yukarihon/static/js/2.918f56d6.chunk.js"
   },
   {
-    "revision": "e080ab8ac600470ab094",
-    "url": "/yukarihon/static/js/main.72e29499.chunk.js"
+    "revision": "bbc1bdc98cc73569c560",
+    "url": "/yukarihon/static/js/main.f2e62cef.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -21,7 +21,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "1389f49a600213a6d723857f809f2867",
-    "url": "/yukarihon/static/media/CenturyGothicRegular.1389f49a.woff"
+    "url": "/yukarihon/static/media/CenturyGothic.1389f49a.woff"
   },
   {
     "revision": "0754a11bba37314a6374aa26661cff0a",
@@ -52,24 +52,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/hse-blue.9f7d20d6.svg"
   },
   {
-    "revision": "b85ddd64ec26a8330ab534d64e9a5da8",
-    "url": "/yukarihon/static/media/logo-about.b85ddd64.svg"
+    "revision": "282c9fb94bab7a81a5110f3a9d9b56dc",
+    "url": "/yukarihon/static/media/logo-about.282c9fb9.svg"
   },
   {
     "revision": "88846209bcd11b38328f398575040940",
     "url": "/yukarihon/static/media/logo-home.88846209.svg"
   },
   {
-    "revision": "d1e897a4a11f9cdae2298fdb562b5ebe",
-    "url": "/yukarihon/static/media/logo-nav.d1e897a4.svg"
+    "revision": "bae46f167a70622618e68ba638e5dd0d",
+    "url": "/yukarihon/static/media/logo-nav.bae46f16.svg"
   },
   {
     "revision": "6b4f0dfcc867255ceccee94314577152",
     "url": "/yukarihon/static/media/nauchka.6b4f0dfc.svg"
   },
   {
-    "revision": "c3468f0312d6386fa2e0ab82294a3dc0",
-    "url": "/yukarihon/static/media/seiran.c3468f03.svg"
+    "revision": "d6f8d58d5c1ddda2cbfa7f7ce885cae9",
+    "url": "/yukarihon/static/media/seiran.d6f8d58d.svg"
   },
   {
     "revision": "be42de689f00322608342cfcdcc85876",
