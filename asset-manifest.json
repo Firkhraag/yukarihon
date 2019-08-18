@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yukarihon/static/css/main.176d32ba.chunk.css",
-    "main.js": "/yukarihon/static/js/main.c1330a48.chunk.js",
-    "main.js.map": "/yukarihon/static/js/main.c1330a48.chunk.js.map",
+    "main.js": "/yukarihon/static/js/main.b37592bb.chunk.js",
+    "main.js.map": "/yukarihon/static/js/main.b37592bb.chunk.js.map",
     "runtime~main.js": "/yukarihon/static/js/runtime~main.c4e67a6f.js",
     "runtime~main.js.map": "/yukarihon/static/js/runtime~main.c4e67a6f.js.map",
     "static/js/2.b275ec7c.chunk.js": "/yukarihon/static/js/2.b275ec7c.chunk.js",
     "static/js/2.b275ec7c.chunk.js.map": "/yukarihon/static/js/2.b275ec7c.chunk.js.map",
     "index.html": "/yukarihon/index.html",
-    "precache-manifest.976d7c274e1327a4cf6e7192f094c6ab.js": "/yukarihon/precache-manifest.976d7c274e1327a4cf6e7192f094c6ab.js",
+    "precache-manifest.c70610da1c7e2df954f2ffa77e127f37.js": "/yukarihon/precache-manifest.c70610da1c7e2df954f2ffa77e127f37.js",
     "service-worker.js": "/yukarihon/service-worker.js",
     "static/css/main.176d32ba.chunk.css.map": "/yukarihon/static/css/main.176d32ba.chunk.css.map",
     "static/media/index.css": "/yukarihon/static/media/CenturyGothic.1389f49a.woff",
