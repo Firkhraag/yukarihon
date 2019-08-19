@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5cd936ff44585d5d589ff054283ab252",
+    "revision": "06c266c9d44cdb443c670f6465e71400",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "fba7813c13393a4dff6e",
-    "url": "/yukarihon/static/css/main.2064515e.chunk.css"
+    "revision": "d25a8ff5a6acc593ebae",
+    "url": "/yukarihon/static/css/main.9042e8a1.chunk.css"
   },
   {
-    "revision": "5815990aff45a6e92b73",
-    "url": "/yukarihon/static/js/2.b275ec7c.chunk.js"
+    "revision": "82dcda12486baaf4fc22",
+    "url": "/yukarihon/static/js/2.6cb5782a.chunk.js"
   },
   {
-    "revision": "fba7813c13393a4dff6e",
-    "url": "/yukarihon/static/js/main.8024ff9a.chunk.js"
+    "revision": "d25a8ff5a6acc593ebae",
+    "url": "/yukarihon/static/js/main.b8b7a4e9.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -38,6 +38,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29dbf192926c10e47b35d1ff41d40e2c",
     "url": "/yukarihon/static/media/clock-violet.29dbf192.svg"
+  },
+  {
+    "revision": "fa0ab5eda86ddf16a4537e64c4c16e80",
+    "url": "/yukarihon/static/media/close-ev-blue.fa0ab5ed.svg"
+  },
+  {
+    "revision": "4b89e22e5d9bc1fc50af286b37fe6702",
+    "url": "/yukarihon/static/media/close-ev-mixed.4b89e22e.svg"
+  },
+  {
+    "revision": "0067aa2791555c9486b0d94d08bf6dcf",
+    "url": "/yukarihon/static/media/close-ev.0067aa27.svg"
   },
   {
     "revision": "65b000010b5730503beb9287292140cb",
