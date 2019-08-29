@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "301373181f214308762f2e9f9e6ce671",
+    "revision": "2968684f18fff23619d36e48bac6d545",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "bb8711d83b53cf0492e7",
-    "url": "/yukarihon/static/css/main.946b6b0c.chunk.css"
+    "revision": "e30286de674475a9cb0f",
+    "url": "/yukarihon/static/css/main.fb6cfa1d.chunk.css"
   },
   {
     "revision": "88b99017042d37406a2d",
     "url": "/yukarihon/static/js/2.c7582a5a.chunk.js"
   },
   {
-    "revision": "bb8711d83b53cf0492e7",
-    "url": "/yukarihon/static/js/main.146ae4a3.chunk.js"
+    "revision": "e30286de674475a9cb0f",
+    "url": "/yukarihon/static/js/main.3d259c16.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -76,16 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/logo-nav.bae46f16.svg"
   },
   {
-    "revision": "9cc21267f035cf5cc1a2ebdc37c51f21",
-    "url": "/yukarihon/static/media/minus-square.9cc21267.svg"
-  },
-  {
     "revision": "6b4f0dfcc867255ceccee94314577152",
     "url": "/yukarihon/static/media/nauchka.6b4f0dfc.svg"
-  },
-  {
-    "revision": "03f3912cec4c831093c93d162390bfdc",
-    "url": "/yukarihon/static/media/plus-square.03f3912c.svg"
   },
   {
     "revision": "d6f8d58d5c1ddda2cbfa7f7ce885cae9",
