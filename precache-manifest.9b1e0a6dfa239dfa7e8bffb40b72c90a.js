@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2968684f18fff23619d36e48bac6d545",
+    "revision": "37dbab9dd0362b023613b8315f436849",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "e30286de674475a9cb0f",
-    "url": "/yukarihon/static/css/main.fb6cfa1d.chunk.css"
+    "revision": "16fb15b6b8d7605c5ab8",
+    "url": "/yukarihon/static/css/main.0e285199.chunk.css"
   },
   {
-    "revision": "88b99017042d37406a2d",
-    "url": "/yukarihon/static/js/2.c7582a5a.chunk.js"
+    "revision": "8f57c2d16c8429b4b7c4",
+    "url": "/yukarihon/static/js/2.8c699b92.chunk.js"
   },
   {
-    "revision": "e30286de674475a9cb0f",
-    "url": "/yukarihon/static/js/main.3d259c16.chunk.js"
+    "revision": "16fb15b6b8d7605c5ab8",
+    "url": "/yukarihon/static/js/main.4fa3eac3.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -60,16 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/exit.db0c664a.svg"
   },
   {
+    "revision": "4a8d4ad22de0069d62610e4b65e85ea8",
+    "url": "/yukarihon/static/media/footer-logo.4a8d4ad2.svg"
+  },
+  {
+    "revision": "d8e4122c60dd978ca25fd11e2d6f00f5",
+    "url": "/yukarihon/static/media/hito-roof.d8e4122c.svg"
+  },
+  {
     "revision": "9f7d20d6e14354b39c3cc43edf187bce",
     "url": "/yukarihon/static/media/hse-blue.9f7d20d6.svg"
   },
   {
     "revision": "282c9fb94bab7a81a5110f3a9d9b56dc",
     "url": "/yukarihon/static/media/logo-about.282c9fb9.svg"
-  },
-  {
-    "revision": "88846209bcd11b38328f398575040940",
-    "url": "/yukarihon/static/media/logo-home.88846209.svg"
   },
   {
     "revision": "bae46f167a70622618e68ba638e5dd0d",
