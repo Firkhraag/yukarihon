@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yukarihon/static/css/main.e4d5032d.chunk.css",
+    "main.css": "/yukarihon/static/css/main.c5a7639f.chunk.css",
     "main.js": "/yukarihon/static/js/main.9bfbf983.chunk.js",
     "main.js.map": "/yukarihon/static/js/main.9bfbf983.chunk.js.map",
     "runtime~main.js": "/yukarihon/static/js/runtime~main.c4e67a6f.js",
@@ -8,9 +8,9 @@
     "static/js/2.76deead0.chunk.js": "/yukarihon/static/js/2.76deead0.chunk.js",
     "static/js/2.76deead0.chunk.js.map": "/yukarihon/static/js/2.76deead0.chunk.js.map",
     "index.html": "/yukarihon/index.html",
-    "precache-manifest.c734e4d1707f1fa8c3dd57a38ff9735b.js": "/yukarihon/precache-manifest.c734e4d1707f1fa8c3dd57a38ff9735b.js",
+    "precache-manifest.187a60635a411c896f5f259304aa093d.js": "/yukarihon/precache-manifest.187a60635a411c896f5f259304aa093d.js",
     "service-worker.js": "/yukarihon/service-worker.js",
-    "static/css/main.e4d5032d.chunk.css.map": "/yukarihon/static/css/main.e4d5032d.chunk.css.map",
+    "static/css/main.c5a7639f.chunk.css.map": "/yukarihon/static/css/main.c5a7639f.chunk.css.map",
     "static/media/index.css": "/yukarihon/static/media/CenturyGothic.1389f49a.woff",
     "static/media/arrow-backward.svg": "/yukarihon/static/media/arrow-backward.1304fdac.svg",
     "static/media/arrow-forward.svg": "/yukarihon/static/media/arrow-forward.2de0905b.svg",
