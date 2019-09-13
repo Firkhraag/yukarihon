@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "551a6c9fb9d2e167d3e08e74f1f2fa45",
+    "revision": "50c517ab10c940864a1e6f31a1d11fcd",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "9e6c41203616d8710cb5",
-    "url": "/yukarihon/static/css/main.71ed4685.chunk.css"
+    "revision": "7b52857458c1bb124f6a",
+    "url": "/yukarihon/static/css/main.c199d051.chunk.css"
   },
   {
-    "revision": "1e740909dc56fa677355",
-    "url": "/yukarihon/static/js/2.ba2e9d57.chunk.js"
+    "revision": "d259918bc655bb95c5e4",
+    "url": "/yukarihon/static/js/2.ad57e7d8.chunk.js"
   },
   {
-    "revision": "9e6c41203616d8710cb5",
-    "url": "/yukarihon/static/js/main.43ccfc3f.chunk.js"
+    "revision": "7b52857458c1bb124f6a",
+    "url": "/yukarihon/static/js/main.c4efad29.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/close-ev.0067aa27.svg"
   },
   {
-    "revision": "17179b55e55aa712f7dfc5c8051303a1",
-    "url": "/yukarihon/static/media/emperor.17179b55.jpg"
+    "revision": "40a5a036b327968cfbcf355e3e04ec33",
+    "url": "/yukarihon/static/media/emperor.40a5a036.jpg"
   },
   {
     "revision": "65b000010b5730503beb9287292140cb",
@@ -62,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db0c664aa0b62b513710af1ede662980",
     "url": "/yukarihon/static/media/exit.db0c664a.svg"
+  },
+  {
+    "revision": "7aa12d672529dfa568927a0743d39155",
+    "url": "/yukarihon/static/media/fusigi.7aa12d67.jpg"
   },
   {
     "revision": "d8e4122c60dd978ca25fd11e2d6f00f5",
@@ -76,6 +80,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/hse-blue.9f7d20d6.svg"
   },
   {
+    "revision": "2e3bbb8f9b0dca64391f56ed66ed0e65",
+    "url": "/yukarihon/static/media/isaa.2e3bbb8f.jpeg"
+  },
+  {
+    "revision": "08a741d73d3e5ed005ec900dec2a8749",
+    "url": "/yukarihon/static/media/kimonozuki.08a741d7.jpg"
+  },
+  {
     "revision": "282c9fb94bab7a81a5110f3a9d9b56dc",
     "url": "/yukarihon/static/media/logo-about.282c9fb9.svg"
   },
@@ -84,20 +96,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/media/logo-nav.bae46f16.svg"
   },
   {
+    "revision": "7948ab9363dbf116870effab35ae50af",
+    "url": "/yukarihon/static/media/musubi.7948ab93.jpg"
+  },
+  {
     "revision": "6b4f0dfcc867255ceccee94314577152",
     "url": "/yukarihon/static/media/nauchka.6b4f0dfc.svg"
   },
   {
-    "revision": "182cad9fdbe63eba57e8a78d5e40bfaf",
-    "url": "/yukarihon/static/media/notes.182cad9f.jpg"
+    "revision": "42504f2cfe6c41a58c5fe3f6356946e6",
+    "url": "/yukarihon/static/media/notes.42504f2c.jpg"
+  },
+  {
+    "revision": "4b230d8e310551cf2f7fb6ad4f2751c3",
+    "url": "/yukarihon/static/media/samurai.4b230d8e.jpg"
   },
   {
     "revision": "d6f8d58d5c1ddda2cbfa7f7ce885cae9",
     "url": "/yukarihon/static/media/seiran.d6f8d58d.svg"
   },
   {
+    "revision": "69eabea27f476d6a5a06bd68e9d9820c",
+    "url": "/yukarihon/static/media/tori.69eabea2.jpg"
+  },
+  {
     "revision": "be42de689f00322608342cfcdcc85876",
     "url": "/yukarihon/static/media/vk-logo.be42de68.svg"
+  },
+  {
+    "revision": "e3a07961e9be2a6464d00126f9f9847f",
+    "url": "/yukarihon/static/media/vostok.e3a07961.png"
+  },
+  {
+    "revision": "76c7745bc9d71242a4c8d8261673625a",
+    "url": "/yukarihon/static/media/vyshka.76c7745b.jpg"
   },
   {
     "revision": "bafcddcd66e555d5c79980704da455c9",
