@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab13a1847718175acc99f9df055aadb8",
+    "revision": "9ab97e927c28d367a2281a95f7b89932",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "4d6deadeae0ee973e100",
-    "url": "/yukarihon/static/css/main.cc3217ad.chunk.css"
+    "revision": "d4b6e0109e06d17c09c9",
+    "url": "/yukarihon/static/css/main.12b835ea.chunk.css"
   },
   {
-    "revision": "d259918bc655bb95c5e4",
-    "url": "/yukarihon/static/js/2.ad57e7d8.chunk.js"
+    "revision": "87e73e0390653a0a51f7",
+    "url": "/yukarihon/static/js/2.348eee07.chunk.js"
   },
   {
-    "revision": "4d6deadeae0ee973e100",
-    "url": "/yukarihon/static/js/main.c685a507.chunk.js"
+    "revision": "d4b6e0109e06d17c09c9",
+    "url": "/yukarihon/static/js/main.752a8a11.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6b4f0dfcc867255ceccee94314577152",
     "url": "/yukarihon/static/media/nauchka.6b4f0dfc.svg"
+  },
+  {
+    "revision": "b59206d1add532dd59e68f179ea56403",
+    "url": "/yukarihon/static/media/not-found-logo.b59206d1.svg"
   },
   {
     "revision": "42504f2cfe6c41a58c5fe3f6356946e6",
