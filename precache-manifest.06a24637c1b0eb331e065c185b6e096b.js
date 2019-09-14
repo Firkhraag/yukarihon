@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73f202051aa9e9632afe7a2086b6dddc",
+    "revision": "b88e721f9fc7b2ec6810772742ac1324",
     "url": "/yukarihon/index.html"
   },
   {
-    "revision": "7b3738de8552f292aee1",
+    "revision": "e8bba87e2a73ad052d64",
     "url": "/yukarihon/static/css/main.315b442b.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yukarihon/static/js/2.7b862ec2.chunk.js"
   },
   {
-    "revision": "7b3738de8552f292aee1",
-    "url": "/yukarihon/static/js/main.07dd3b71.chunk.js"
+    "revision": "e8bba87e2a73ad052d64",
+    "url": "/yukarihon/static/js/main.0e0e0761.chunk.js"
   },
   {
     "revision": "ffbde705411c9e53e2e9",
