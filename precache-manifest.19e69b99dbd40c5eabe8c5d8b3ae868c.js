@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4cac0c5cd520fa6966b686d36473cb96",
+    "revision": "6897a273a988190c5d505142a290d68c",
     "url": "/index.html"
   },
   {
-    "revision": "0d800d47e82d9a436140",
-    "url": "/static/css/main.27da25c8.chunk.css"
+    "revision": "1e5bd8b3f3877413f625",
+    "url": "/static/css/main.53f5cfdb.chunk.css"
   },
   {
-    "revision": "f4024c00674c555b1b8d",
-    "url": "/static/js/2.515b7987.chunk.js"
+    "revision": "0c86011cbdae28217da8",
+    "url": "/static/js/2.c3271104.chunk.js"
   },
   {
-    "revision": "0d800d47e82d9a436140",
-    "url": "/static/js/main.c5858ce7.chunk.js"
+    "revision": "1e5bd8b3f3877413f625",
+    "url": "/static/js/main.d04582c9.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -30,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2de0905bddb887e3b9562d9c2e418436",
     "url": "/static/media/arrow-forward.2de0905b.svg"
-  },
-  {
-    "revision": "fc36d2e4a373df67b1f2881e8efcd880",
-    "url": "/static/media/book.fc36d2e4.svg"
   },
   {
     "revision": "f19a54a09dc92df40276ee2143940e27",
@@ -56,6 +52,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/close-ev.0067aa27.svg"
   },
   {
+    "revision": "c98b38908cca4c42d84970e1f4a750f0",
+    "url": "/static/media/clubmgimo.c98b3890.jpg"
+  },
+  {
+    "revision": "56e1e49a5c6698bf204a76381183c2a4",
+    "url": "/static/media/clubmsu.56e1e49a.jpg"
+  },
+  {
+    "revision": "761b415b34c9008d4ddf2e37d322c837",
+    "url": "/static/media/clubrtu.761b415b.jpg"
+  },
+  {
+    "revision": "4876e2faca78e84cc49771e6422cdb42",
+    "url": "/static/media/discussionclub.4876e2fa.jpg"
+  },
+  {
     "revision": "40a5a036b327968cfbcf355e3e04ec33",
     "url": "/static/media/emperor.40a5a036.jpg"
   },
@@ -66,10 +78,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db0c664aa0b62b513710af1ede662980",
     "url": "/static/media/exit.db0c664a.svg"
-  },
-  {
-    "revision": "7aa12d672529dfa568927a0743d39155",
-    "url": "/static/media/fusigi.7aa12d67.jpg"
   },
   {
     "revision": "d8e4122c60dd978ca25fd11e2d6f00f5",
@@ -88,28 +96,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/isaa.2e3bbb8f.jpeg"
   },
   {
-    "revision": "08a741d73d3e5ed005ec900dec2a8749",
-    "url": "/static/media/kimonozuki.08a741d7.jpg"
+    "revision": "4324fe5a97d96f385cda0b30704c7bf1",
+    "url": "/static/media/japfound.4324fe5a.png"
   },
   {
-    "revision": "282c9fb94bab7a81a5110f3a9d9b56dc",
-    "url": "/static/media/logo-about.282c9fb9.svg"
-  },
-  {
-    "revision": "bae46f167a70622618e68ba638e5dd0d",
-    "url": "/static/media/logo-nav.bae46f16.svg"
+    "revision": "eda2bfc6623dec97d8d7d759e5012245",
+    "url": "/static/media/logo.eda2bfc6.svg"
   },
   {
     "revision": "7948ab9363dbf116870effab35ae50af",
     "url": "/static/media/musubi.7948ab93.jpg"
   },
   {
-    "revision": "d3831a91a84219866160c4463f6d1640",
-    "url": "/static/media/nauchka.d3831a91.jpg"
-  },
-  {
-    "revision": "42504f2cfe6c41a58c5fe3f6356946e6",
-    "url": "/static/media/notes.42504f2c.jpg"
+    "revision": "44e75c84a67f971179ce26fc5b2d388d",
+    "url": "/static/media/oriental.44e75c84.jpg"
   },
   {
     "revision": "4b230d8e310551cf2f7fb6ad4f2751c3",
@@ -118,10 +118,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d6f8d58d5c1ddda2cbfa7f7ce885cae9",
     "url": "/static/media/seiran.d6f8d58d.svg"
-  },
-  {
-    "revision": "69eabea27f476d6a5a06bd68e9d9820c",
-    "url": "/static/media/tori.69eabea2.jpg"
   },
   {
     "revision": "be42de689f00322608342cfcdcc85876",
