@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.53f5cfdb.chunk.css",
+    "main.css": "/static/css/main.ce1c3feb.chunk.css",
     "main.js": "/static/js/main.d04582c9.chunk.js",
     "main.js.map": "/static/js/main.d04582c9.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
@@ -8,9 +8,9 @@
     "static/js/2.c3271104.chunk.js": "/static/js/2.c3271104.chunk.js",
     "static/js/2.c3271104.chunk.js.map": "/static/js/2.c3271104.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.19e69b99dbd40c5eabe8c5d8b3ae868c.js": "/precache-manifest.19e69b99dbd40c5eabe8c5d8b3ae868c.js",
+    "precache-manifest.d38a1564e2f356f95695ee1e95955a82.js": "/precache-manifest.d38a1564e2f356f95695ee1e95955a82.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.53f5cfdb.chunk.css.map": "/static/css/main.53f5cfdb.chunk.css.map",
+    "static/css/main.ce1c3feb.chunk.css.map": "/static/css/main.ce1c3feb.chunk.css.map",
     "static/media/index.css": "/static/media/CenturyGothic.1389f49a.woff",
     "static/media/arrow-backward.svg": "/static/media/arrow-backward.1304fdac.svg",
     "static/media/arrow-forward.svg": "/static/media/arrow-forward.2de0905b.svg",
