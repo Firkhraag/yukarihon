@@ -1,0 +1,30 @@
+.side-drawer {
+    height: 100vh;
+    width: 60%;
+    max-width: 300px;
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform .2s ease-out;
+}
+
+@media (min-width: 801px) {
+    .side-drawer {
+        display: none;
+    }
+}
+
+.side-drawer ul {
+    font-size: 1.25em;
+}
+
+.side-drawer li {
+    padding: 1.25em 1.5em;
+}
+
+.side-drawer a:hover li {
+    color: #fff;
+}
+
+.side-drawer a:hover {
+    background: linear-gradient(90deg, var(--violet), var(--blue));
+}

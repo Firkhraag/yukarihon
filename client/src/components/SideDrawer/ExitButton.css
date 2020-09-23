@@ -1,0 +1,12 @@
+.exit-btn {
+	width: 20px;
+}
+
+.exit-btn-cnt {
+	text-align: right;
+}
+
+.exit-btn-cnt img {
+	margin-top: 1em;
+	margin-right: 1em;
+}

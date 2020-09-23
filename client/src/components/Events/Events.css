@@ -1,0 +1,153 @@
+.sign-input {
+	padding: 1em 1.5em;
+	width: 30vw;
+	font-size: 1.1em;
+}
+
+.input-div {
+	margin-bottom: 1.5em;
+}
+
+.input-div label {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.register-header {
+	font-size: 3.5em;
+}
+
+.register-sub-header {
+	margin-bottom: 1.5em;
+	font-size: 1.75em;
+}
+
+.register-btn {
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--violet);
+	background: #fff;
+	border: 2px solid var(--violet);
+	font-size: 1.25em;
+	padding: 0.6em 0.8em;
+	transition: width 0.75s ease-in-out, height 0.5s ease-in-out,
+		border-radius 0.5s ease-in-out;
+}
+
+.checked .register-btn {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	padding: 0;
+	pointer-events: none;
+}
+
+.checked .reg-btn-text {
+	width: 0;
+}
+
+.register-btn-width {
+	width: 31vw;
+}
+
+.calendar-logo {
+	width: 45px;
+	margin-right: 10px;
+	transition: margin 0.75s ease-in-out;
+}
+
+.checked .calendar-logo {
+	margin-right: 0;
+	margin-top: -1px;
+}
+
+@media only screen and (max-width: 1080px) {
+	.sign-input {
+		width: 40vw;
+	}
+	.register-header {
+		font-size: 3.25em;
+	}
+	.register-sub-header {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.sign-input {
+		width: 45vw;
+	}
+	.register-header {
+		font-size: 3em;
+	}
+	.register-sub-header {
+		font-size: 1.25em;
+	}
+	.register-btn-width {
+		width: 60vw;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.register-btn-width {
+		width: 65vw;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.sign-input {
+		width: 50vw;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.register-btn-width {
+		width: 70vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.sign-input {
+		width: 55vw;
+	}
+	.register-header {
+		font-size: 2.75em;
+	}
+	.register-btn {
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.sign-input {
+		width: 62vw;
+	}
+	.register-header {
+		font-size: 2.5em;
+	}
+	.register-btn-width {
+		width: 75vw;
+	}
+	.register-btn {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.register-btn-width {
+		width: 80vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.sign-input {
+		width: 72vw;
+	}
+	.register-header {
+		font-size: 2.25em;
+	}
+	.register-sub-header {
+		font-size: 1em;
+	}
+}

@@ -1,0 +1,156 @@
+.w-c {
+    width: 100%;
+    margin-top: 1.5em;
+}
+  
+.logo-about {
+    width: 33%;
+    margin-top: 1.5em;
+}
+
+.wave-container {
+    width: 100%;
+    top: -5px;
+}
+
+.wave-container:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 160px;
+    background: url(../../assets/images/white-wave.svg) no-repeat;
+    position: relative;
+    top: 10px;
+    background-size: 100%;
+}
+  
+.wave-container p {
+    padding: 0 10vw;
+}
+
+.wave-cnt {
+    width: 100%;
+    height: 212px;
+    background: url(../../assets/images/wave.svg) no-repeat;
+    background-size: 100%;
+}
+
+@media only screen and (min-width: 1500px) {
+    .wave-cnt {
+        height: 250px;
+    }
+    .wave-container:after {
+        height: 180px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .wave-cnt {
+        height: 300px;
+    }
+    .wave-container:after {
+      height: 200px;
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+    .wave-cnt {
+        height: 350px;
+    }
+    .wave-container:after {
+      height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .wave-cnt {
+        height: 190px;
+    }
+    .logo-about {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .wave-cnt {
+        height: 160px;
+    }
+    .logo-about {
+        width: 40%;
+    }
+    .wave-container:after {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .wave-cnt {
+        height: 150px;
+    }
+    .logo-about {
+      width: 45%;
+    }
+    .wave-container:after {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wave-cnt {
+        height: 130px;
+    }
+    .logo-about {
+      width: 50%;
+    }
+    .wave-container:after {
+      height: 110px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .wave-cnt {
+        height: 110px;
+    }
+    .logo-about {
+        width: 55%;
+    }
+    .wave-container:after {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wave-cnt {
+        height: 90px;
+    }
+    .logo-about {
+        width: 60%;
+    }
+    .wave-container:after {
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .wave-cnt {
+        height: 80px;
+    }
+    .logo-about {
+        width: 65%;
+    }
+    .wave-container:after {
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .wave-cnt {
+        height: 70px;
+    }
+    .logo-about {
+        width: 70%;
+    }
+    .wave-container:after {
+        height: 50px;
+    }
+}

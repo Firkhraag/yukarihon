@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    color: white;
+    margin-top: 3em;
+    padding: 1em 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer-cnt {
+    justify-content: space-evenly;
+}
+
+.vk-logo {
+    width: 50px;
+    margin-left: -5px;
+}

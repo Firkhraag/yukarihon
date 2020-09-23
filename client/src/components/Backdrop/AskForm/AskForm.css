@@ -1,0 +1,379 @@
+.form {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	margin-left: -256px;
+	width: 510px;
+	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.25);
+	padding: 1em 1em 0.25em 1em;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	z-index: 180;
+	animation: pop 0.5s ease-in-out;
+	margin-bottom: 10vh;
+	box-sizing: border-box;
+}
+
+@keyframes pop {
+	0% {
+		top: 100%;
+	}
+	80% {
+		top: 2%;
+	}
+	100% {
+		top: 5%;
+	}
+}
+
+.form .input-fields input,
+.form .input-fields textarea {
+	padding: 1em;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+
+.form .input-fields input:focus + label,
+.form .input-fields textarea:focus + label {
+	color: var(--violet);
+}
+
+.form .input-fields input:focus ~ label,
+.form .input-fields textarea:focus ~ label {
+	color: var(--violet);
+}
+
+.form .input-fields input:focus ~ label,
+.form .input-fields input:valid ~ label,
+.form .input-fields textarea:focus ~ label,
+.form .input-fields textarea:valid ~ label {
+	top: -8px;
+	font-size: 0.7em;
+	font-weight: bold;
+}
+
+.form .input-fields label {
+	position: absolute;
+	top: 15px;
+	left: 1.5em;
+	font-size: 1em;
+	color: #000;
+	pointer-events: none;
+	transform: 0.5s;
+	transition: all 0.2s linear;
+	background: #fff;
+}
+
+.form .input-fields textarea {
+	resize: none;
+	height: 200px;
+}
+
+.form img {
+	width: 45%;
+}
+
+.form .input-margin-bottom {
+	margin-bottom: 1.25em;
+}
+
+.form .checkbox-margin-bottom {
+	margin-bottom: 0.25em;
+}
+
+.form-logo {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	user-select: none;
+}
+
+.form .checkbox {
+	min-width: 18px;
+	height: 18px;
+	border: 1.5px solid #000;
+	position: relative;
+	border-radius: 5px;
+}
+
+.checkboxes-cnt p {
+	user-select: none;
+	margin-left: 5px;
+}
+
+.button-wrapper {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	height: 90px;
+}
+
+.submit {
+	z-index: 2;
+	height: 3em;
+	transition: transform 0.7s ease, border-radius 0.7s ease, color 0.4s ease,
+		filter 0.2s ease, width 0.7s ease;
+}
+
+.submit:before {
+	content: '';
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	background: none;
+	display: block;
+	background: none;
+	transform: scale(0.9) translateY(15px);
+	transition: all 0.2s ease;
+}
+
+.submit:after {
+	content: '';
+	z-index: -4;
+	width: 100%;
+	height: 100%;
+	background: none;
+	display: block;
+	border-radius: 200px;
+}
+
+.checked .submit {
+	width: 3em;
+	border-radius: 50%;
+	color: rgba(255, 255, 255, 0);
+	animation: submit-anim 4s cubic-bezier(0.39, 0.575, 0.565, 1);
+	pointer-events: none;
+}
+
+@keyframes submit-anim {
+	0% {
+		transform: scale(1);
+	}
+	5%,
+	95% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.loader {
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	opacity: 1;
+	z-index: 1;
+	transform: scale(0.2);
+}
+
+.checked .loader-wrapper {
+	animation: wrapper-loader-anim 4.2s linear;
+	transform: scale(0);
+}
+
+.loader-violet {
+	background-color: var(--violet);
+}
+
+.loader-blue {
+	background-color: var(--blue);
+}
+
+.checked .loader {
+	opacity: 1;
+}
+
+.checked .loader-violet {
+	animation: loader-anim-violet 4s 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.checked .loader-blue {
+	animation: loader-anim-blue 4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.checked .orange {
+	animation: loader-anim-orange 4s 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.check-wrapper {
+	z-index: -1;
+	opacity: 1;
+}
+
+.checkmark {
+	display: inline-block;
+	transform: rotate(45deg);
+	height: 18px;
+	width: 10px;
+	border-bottom: 4px solid #fff;
+	border-right: 4px solid #fff;
+}
+
+.checked .checkmark {
+	animation: checkmark 4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.checked .check-wrapper {
+	z-index: 3;
+}
+
+@keyframes loader-anim-violet {
+	0% {
+		transform: scale(0.2) rotate(0deg) translate(170px, 0px);
+	}
+	95% {
+		transform: scale(0.2) rotate(900deg) translate(190px, 0px);
+	}
+	100% {
+		transform: scale(0.05) translate(0px, 0px);
+	}
+}
+
+@keyframes loader-anim-blue {
+	0% {
+		transform: scale(0.2) rotate(0deg) translate(170px, 0px);
+	}
+	95% {
+		transform: scale(0.2) rotate(1080deg) translate(190px, 0px);
+	}
+	100% {
+		transform: scale(0.05) translate(0px, 0px);
+	}
+}
+
+@keyframes loader-anim-orange {
+	0%,
+	70% {
+		transform: scale(0.2) rotate(30deg) translate(0px);
+	}
+	85% {
+		transform: scale(0.2) rotate(30deg) translate(-300px);
+	}
+	100% {
+		transform: scale(0.2) rotate(30deg) translate(0px);
+	}
+}
+
+@keyframes wrapper-loader-anim {
+	0% {
+		transform: scale(0) translateY(0px);
+	}
+	10% {
+		transform: scale(1) translateY(20px);
+	}
+	90% {
+		transform: scale(1) translateY(-10px);
+	}
+	100% {
+		transform: scale(0) translateY(0px);
+	}
+}
+
+@keyframes checkmark {
+	0% {
+		height: 0;
+		width: 0;
+		opacity: 0;
+	}
+	90% {
+		height: 0;
+		width: 0;
+		opacity: 0;
+	}
+	91% {
+		height: 0;
+		width: 2px;
+		opacity: 1;
+	}
+	92% {
+		height: 0;
+		width: 4px;
+		opacity: 1;
+	}
+	93% {
+		height: 0;
+		width: 6px;
+		opacity: 1;
+	}
+	94% {
+		height: 0;
+		width: 8px;
+		opacity: 1;
+	}
+	95% {
+		height: 0;
+		width: 10px;
+		opacity: 1;
+	}
+	96% {
+		height: 4px;
+		width: 10px;
+		opacity: 1;
+	}
+	97% {
+		height: 8px;
+		width: 10px;
+		opacity: 1;
+	}
+	98% {
+		height: 12px;
+		width: 10px;
+		opacity: 1;
+	}
+	99% {
+		height: 16px;
+		width: 10px;
+		opacity: 1;
+	}
+	100% {
+		height: 18px;
+		width: 10px;
+		opacity: 1;
+	}
+}
+
+.checkmark-t {
+	display: none;
+}
+
+.checkmark-t:after {
+	opacity: 1;
+	height: 18px;
+	width: 10px;
+	transform-origin: left top;
+	border-right: 3px solid var(--violet);
+	border-top: 3px solid var(--violet);
+	content: '';
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.checkmark-t .draw:after {
+	animation-duration: 800ms;
+	animation-timing-function: ease;
+	animation-name: checkmark;
+	transform: scaleX(-1) rotate(135deg);
+}
+
+.form-inputs-width {
+	width: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+	.form {
+		width: 380px;
+		margin-left: -191px;
+	}
+	.form-inputs-width {
+		width: 285px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.form {
+		width: 310px;
+		margin-left: -156px;
+	}
+	.form-inputs-width {
+		width: 250px;
+	}
+}

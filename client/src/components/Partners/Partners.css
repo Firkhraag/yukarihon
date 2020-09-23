@@ -1,0 +1,65 @@
+.partners {
+	margin: 1.2em 1.2em 0 1.2em;
+}
+
+.partners-2 {
+	margin: 0 1.2em;
+}
+
+.partners > h2 {
+	margin-bottom: 0.15em;
+}
+
+.p-c {
+	flex-wrap: wrap;
+}
+
+.hs {
+	display: grid;
+	grid-gap: 30px;
+	overflow-x: scroll;
+	scroll-snap-type: x proximity;
+	padding: 1.9em 0 2.2em 0;
+	scrollbar-width: none;
+}
+
+.hs1 {
+	grid-template-columns: 0.1px 233px 233px 233px 233px 233px 0.1px;
+}
+
+.hs3 {
+	grid-template-columns: 0.1px 250px 250px 250px 0.1px;
+}
+
+.hs::-webkit-scrollbar {
+	display: none;
+}
+
+.hs:before,
+.hs:after {
+	content: '';
+}
+
+.arrow-right,
+.arrow-left {
+	position: absolute;
+	top: 45%;
+	width: 60px;
+	opacity: 0.5;
+	z-index: 25;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+	opacity: 1;
+}
+
+.arrow-right {
+	right: 0;
+	animation: arrow-right 2s linear infinite;
+}
+
+.arrow-left {
+	left: 0;
+	animation: arrow-left 2s linear infinite;
+}

@@ -1,0 +1,228 @@
+.events-header {
+    border-radius: 15px;
+    display: inline-block;
+    width: 20vw;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, .2);
+    padding: .8em 1.2em;
+    margin-bottom: .75em;
+}
+
+.events-header.ev-header-opened {
+    justify-content: space-between;
+}
+
+.events-header h2 {
+    font-size: 1.75em;
+}
+.events-header p {
+    font-size: 1.5em;
+}
+
+.ev-cards {
+    display: grid;
+    grid-gap: 30px;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding: .95em .5em;
+    min-height: 300px;
+    scrollbar-width: none;
+}
+
+.ev-cards-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.ev-cards-2 {
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    justify-content: center;
+}
+
+.ev-cards-3 {
+    grid-template-columns: 1px 1fr 1fr 1fr 1px;
+    justify-content: center;
+}
+
+/* .ev-cards-4 {
+    grid-template-columns: 1px 400px 400px 400px 400px 1px;
+} */
+
+.ev-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.ev-cards:before,
+.ev-cards:after {
+    content: '';
+}
+
+.ev-cards-headers {
+    justify-content: space-evenly;
+}
+
+.group-label {
+    width: 30vw;
+    font-size: 1.5em;
+    border-radius: 15px;
+    margin-bottom: 1.9em;
+}
+
+.ev-font-padding {
+    font-size: 1.2em;
+    /* padding: 0 65px 0 85px; */
+}
+
+.ev-padding-label {
+    padding: 0 65px 0 85px;
+}
+
+.ev-header-style {
+    height: 120px;
+    width: 250px;
+    border-radius: 50% 50% 50% 50% / 79% 79% 21% 21%;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .group-label {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .group-label  {
+        font-size: 1.35em;
+    }
+    .ev-cards-3 {
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .group-label {
+        font-size: 1.25em;
+    }
+    .events-header h2 {
+        font-size: 1.75em;
+    }
+    .events-header p {
+        font-size: 1.35em;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .ev-cards-1 {
+        grid-template-columns: 1px 400px 1px;
+    }
+    .ev-cards-2 {
+        grid-template-columns: 1px 400px 400px 1px;
+        justify-content: start;
+    }
+    .ev-cards-3 {
+        grid-template-columns: 1px 400px 400px 400px 1px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .events-header h2 {
+        font-size: 1.35em;
+    }
+    .events-header p {
+        font-size: 1.05em;
+    }
+    .events-header {
+        width: 25vw;
+    }
+    .ev-font {
+        font-size: 1.1em;
+    }
+    .ev-header-style {
+        height: 90px;
+        width: 170px;
+    }
+    .ev-padding-label {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .events-header {
+        padding: .6em .8em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .events-header {
+        padding: .4em .6em;
+    }
+    .events-header h2 {
+        font-size: 1.25em;
+    }
+    .events-header p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ev-font {
+        font-size: 1.05em;
+    }
+    .events-header h2 {
+        font-size: 1.2em;
+    }
+    .ev-header-style {
+        height: 80px;
+    }
+    .ev-cards-3 {
+        grid-template-columns: 1px 350px 350px 350px 1px;
+        justify-content: start;
+    }
+    .ev-cards-1 {
+        grid-template-columns: 1px 350px 1px;
+        justify-content: start;
+    }
+    .ev-cards-2 {
+        grid-template-columns: 1px 350px 350px 1px;
+    }
+    /* .ev-cards-4 {
+        grid-template-columns: 1px 350px 350px 350px 350px 1px;
+    } */
+}
+
+@media only screen and (max-width: 420px) {
+    .events-header h2 {
+        font-size: 1.15em;
+    }
+    .events-header p {
+        font-size: 1em;
+    }
+    .ev-header-style {
+        height: 78px;
+        width: 153px;
+    }
+    .group-label {
+        font-size: 1.1em;
+    }
+    .ev-cards-3 {
+        grid-template-columns: 1px 325px 325px 325px 1px;
+    }
+    .ev-cards-2 {
+        grid-template-columns: 1px 325px 325px 1px;
+    }
+    .ev-cards-1 {
+        grid-template-columns: 1px 325px 1px;
+    }
+}
+
+@media only screen and (max-width: 397px) {
+    .ev-cards-3 {
+        grid-template-columns: 1px 350px 350px 350px 1px;
+    }
+    .ev-cards-2 {
+        grid-template-columns: 1px 350px 350px 1px;
+    }
+    .ev-cards-1 {
+        grid-template-columns: 1px 350px 1px;
+    }
+}

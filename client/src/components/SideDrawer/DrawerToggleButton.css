@@ -1,0 +1,48 @@
+.toggle-button {
+	margin-right: 0.5em;
+	justify-content: space-around;
+	height: 24px;
+	width: 30px;
+	box-sizing: border-box;
+}
+
+.toggle-button:focus {
+	outline: none;
+}
+
+.toggle-button:hover .v-line {
+	background: var(--violet);
+}
+
+.toggle-button:hover .vb-line {
+	background: linear-gradient(90deg, var(--violet), var(--blue));
+}
+
+.toggle-button:hover .b-line {
+	background: var(--blue);
+}
+
+.toggle-button-line {
+	width: 30px;
+	height: 3px;
+}
+
+.v-line {
+	background: #000;
+}
+
+.vb-line {
+	background: #000;
+}
+
+.b-line {
+	background: #000;
+}
+
+.toggle-white {
+	background: black;
+}
+
+.toggle-violet {
+	background: var(--violet);
+}

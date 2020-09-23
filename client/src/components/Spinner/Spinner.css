@@ -1,0 +1,153 @@
+.spinner:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 50%;
+	border-bottom-color: var(--violet);
+	border-right-color: var(--violet);
+	border-top-color: var(--blue);
+	border-left-color: var(--blue);
+	animation: rotate-animation 1s linear 0s infinite;
+}
+
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes anti-rotate-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.spinner-home {
+	width: 12%;
+	height: 12vw;
+}
+
+.spinner-finish {
+	width: 250px;
+	height: 250px;
+}
+
+.spinner-ev-card {
+	width: 18px;
+	height: 18px;
+}
+
+.spinner-ev-card {
+	width: 45px;
+	height: 45px;
+}
+
+.spinner-ev-card:before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 50%;
+	border-bottom-color: var(--violet);
+	border-right-color: var(--violet);
+	border-top-color: var(--blue);
+	border-left-color: var(--blue);
+	animation: rotate-animation 1s linear 0s infinite;
+}
+
+@media only screen and (max-width: 1366px) {
+	.spinner-home {
+		width: 16%;
+		height: 16vw;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.spinner-home {
+		width: 17%;
+		height: 17vw;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.spinner-home {
+		width: 18%;
+		height: 18vw;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.spinner-home {
+		width: 19%;
+		height: 19vw;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.spinner-home {
+		width: 20%;
+		height: 20vw;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.spinner-home {
+		width: 22%;
+		height: 22vw;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.spinner-home {
+		width: 24%;
+		height: 24vw;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.spinner-home {
+		width: 26%;
+		height: 26vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.spinner-home {
+		width: 30%;
+		height: 30vw;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.spinner-home {
+		width: 32%;
+		height: 32vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.spinner-home {
+		width: 35%;
+		height: 35vw;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.spinner-home {
+		width: 38%;
+		height: 38vw;
+	}
+}
