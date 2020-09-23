@@ -7,14 +7,12 @@ type BackdropProps = {
 	isShown: boolean
 	isAskFormShown: boolean
 	exitClick: () => void
-	setPolicyOpened: (isOpened: boolean) => void
 }
 
 const Backdrop = ({
 	isShown,
 	isAskFormShown,
 	exitClick,
-	setPolicyOpened,
 }: BackdropProps) => {
 	let backdropClasses = 'hide'
 	if (isShown) {
@@ -31,8 +29,7 @@ const Backdrop = ({
 		<div className={backdropClasses} onMouseDown={onClick}>
 			<AskForm
 				isFormShown={isAskFormShown}
-				complete={exitClick}
-				setPolicyOpened={setPolicyOpened}
+				exit={exitClick}
 			/>
 			<img
 				className="close-backdrop pointer"

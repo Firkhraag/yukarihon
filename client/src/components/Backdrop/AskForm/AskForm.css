@@ -1,6 +1,6 @@
 .form {
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	left: 50%;
 	margin-left: -256px;
 	width: 510px;
@@ -18,10 +18,10 @@
 		top: 100%;
 	}
 	80% {
-		top: 2%;
+		top: 5%;
 	}
 	100% {
-		top: 5%;
+		top: 10%;
 	}
 }
 

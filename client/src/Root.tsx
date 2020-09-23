@@ -4,6 +4,8 @@ import { Element } from 'react-scroll'
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import About from './components/About/About'
+import AboutWithPhotos from './components/AboutWithPhotos/AboutWithPhotos'
+import Lectorium from './components/Lectorium/Lectorium'
 import Faq from './components/Faq/Faq'
 import Backdrop from './components/Backdrop/Backdrop'
 import SideDrawer from './components/SideDrawer/SideDrawer'
@@ -16,7 +18,6 @@ const Root = () => {
 	const [isDonateDrawerOpen, setDonateDrawerOpen] = useState(false)
 	const [isBackdropOpen, setBackdropOpen] = useState(false)
 	const [isAskFormShown, setAskFormShown] = useState(false)
-	const [isPolicyOpened, setPolicyOpened] = useState(false)
 
 	const drawerToggleClickHandler = () => {
 		setSideDrawerOpen(!isSideDrawerOpen)
@@ -34,7 +35,7 @@ const Root = () => {
 		setAskFormShown(true)
 	}
 
-	if (isAskFormShown && !isPolicyOpened) {
+	if (isAskFormShown) {
 		document.body.style.overflow = 'hidden'
 	} else {
 		document.body.style.overflow = 'visible'
@@ -65,7 +66,6 @@ const Root = () => {
 					isShown={isBackdropOpen}
 					exitClick={closeToggleClickHandler}
 					isAskFormShown={isAskFormShown}
-					setPolicyOpened={setPolicyOpened}
 				/>
 				<Element name="home">
 					<Home />
@@ -73,8 +73,17 @@ const Root = () => {
 				<Element name="about">
 					<About />
 				</Element>
+				<Element name="about_team">
+					<AboutWithPhotos />
+				</Element>
+				<Element name="lectorium">
+					<Lectorium />
+				</Element>
 				<Element name="faq">
-					<Faq buttonClick={openAskForm} />
+					<Faq
+						buttonClick={openAskForm}
+						openDonateDrawer={() => setDonateDrawerOpen(true)}
+					/>
 				</Element>
 				<Partners />
 				<Footer />

@@ -78,7 +78,7 @@ const Partners = () => {
 	}
 
 	return (
-		<div>
+		<div className="margin-from-prev-comp">
 			<div className="partners relative">
 				<h1 className="text-centered">Наши партнеры</h1>
 				{arrowsNotNeeded3 ? (

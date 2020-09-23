@@ -3,10 +3,9 @@ import DonateIcon from './DonateIcon'
 
 type DonateProps = {
 	setDonateDrawerOpen: (isOpen: boolean) => void
-	isDesktop: boolean
 }
 
-const Donate = ({ setDonateDrawerOpen, isDesktop }: DonateProps) => {
+const Donate = ({ setDonateDrawerOpen }: DonateProps) => {
 	const [donateIconHoverd, setDonateIconHovered] = useState(false)
 
 	return (
@@ -14,13 +13,10 @@ const Donate = ({ setDonateDrawerOpen, isDesktop }: DonateProps) => {
 			onClick={() => setDonateDrawerOpen(true)}
 			className="pointer"
 			onMouseEnter={() => setDonateIconHovered(true)}
-			onMouseLeave={() => setDonateIconHovered(false)}
+            onMouseLeave={() => setDonateIconHovered(false)}
+            onBlur={() => setDonateIconHovered(false)}
 		>
-			{isDesktop ? (
-				<DonateIcon fill={donateIconHoverd ? '#7e4399' : '#000'} />
-			) : (
-				<DonateIcon fill={'#000'} />
-			)}
+			<DonateIcon fill={donateIconHoverd ? '#7e4399' : '#000'} />
 		</div>
 	)
 }

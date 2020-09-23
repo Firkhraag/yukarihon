@@ -110,14 +110,23 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .donate-drawer {
+		width: 68%;
+	}
 	.donate-submit-btn > button {
 		width: 200px;
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.donate-drawer {
+		width: 72%;
+	}
+}
+
 @media only screen and (max-width: 450px) {
 	.donate-drawer {
-		width: 66%;
+		width: 75%;
 	}
 	.donate-submit-btn > button {
 		width: 175px;
@@ -126,6 +135,6 @@
 
 @media only screen and (max-width: 350px) {
 	.donate-drawer {
-		width: 70%;
+		width: 80%;
 	}
 }

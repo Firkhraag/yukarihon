@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 
 const Policy = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
+        document.body.style.overflow = 'visible'
 	}, [])
 
 	return (

@@ -5,11 +5,10 @@ import './AskForm.css'
 
 type AskFormProps = {
 	isFormShown: boolean
-	complete: () => void
-	setPolicyOpened: (isOpened: boolean) => void
+	exit: () => void
 }
 
-const AskForm = ({ isFormShown, complete, setPolicyOpened }: AskFormProps) => {
+const AskForm = ({ isFormShown, exit }: AskFormProps) => {
 	const [submitButtonClicked, setSubmitButtonClicked] = useState(false)
 	const [inputValues, setInputValues] = useState({
 		name: '',
@@ -99,7 +98,7 @@ const AskForm = ({ isFormShown, complete, setPolicyOpened }: AskFormProps) => {
 			if (honeyPass === '') {
 				setSubmitButtonClicked(!submitButtonClicked)
 				setTimeout(() => {
-					complete()
+					exit()
 					setSubmitButtonClicked(false)
 				}, 4500)
 			}
@@ -176,7 +175,7 @@ const AskForm = ({ isFormShown, complete, setPolicyOpened }: AskFormProps) => {
 				>
 					Нажимая на кнопку, вы даете согласие на обработку
 					персональных данных и соглашаетесь c{' '}
-					<Link to="/privacy" onClick={() => setPolicyOpened(true)}>
+					<Link to="/policy">
 						политикой конфиденциальности
 					</Link>
 				</p>

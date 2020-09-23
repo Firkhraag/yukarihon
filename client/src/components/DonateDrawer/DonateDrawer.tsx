@@ -104,10 +104,9 @@ const DonateDrawer = ({ exitClick, isShown }: DonateDrawerProps) => {
 						width="100%"
 						height="223"
 						frameBorder="0"
-						allowTransparency={true}
-						scrolling="no"
+                        scrolling="no"
 					/>
-					<p className="line-height" style={{ fontSize: '.75em' }}>
+					<p className="line-height" style={{ fontSize: '.85em', margin: '.66em .1em 0em .1em', }}>
 						Также средства можно направить на СберКарту автора
 						проекта Ивана Алексеевича Т. №4276 3801 2609 5467 с
 						подписью «Поддержка Юкари».

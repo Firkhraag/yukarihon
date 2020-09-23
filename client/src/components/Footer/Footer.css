@@ -15,3 +15,13 @@
     width: 50px;
     margin-left: -5px;
 }
+
+.footer .mrg-bot {
+    margin-bottom: .75em;
+}
+
+@media only screen and (max-width: 800px) {
+	.vk-logo {
+		width: 40px;
+	}
+}

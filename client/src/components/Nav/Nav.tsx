@@ -30,7 +30,6 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 				<div className="toggle-btn">
 					<Donate
 						setDonateDrawerOpen={setDonateDrawerOpen}
-						isDesktop={isDesktop}
 					/>
 					<div onClick={drawerToggleClickHandler}>
 						<DrawerToggleButton />
@@ -49,20 +48,20 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 					</Link>
 					<Link
 						activeClass="active"
-						to=""
+						to="about_team"
 						spy={true}
 						smooth={true}
-						offset={0}
+						offset={-225}
 						duration={500}
 					>
 						<li className="pointer">О команде</li>
 					</Link>
 					<Link
 						activeClass="active"
-						to=""
+						to="lectorium"
 						spy={true}
 						smooth={true}
-						offset={0}
+						offset={-125}
 						duration={500}
 					>
 						<li className="pointer">Лекторий</li>
@@ -72,26 +71,19 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 						to="faq"
 						spy={true}
 						smooth={true}
-						offset={-80}
+						offset={-100}
 						duration={500}
 					>
 						<li className="pointer">F.A.Q.</li>
 					</Link>
-					<Link
-						activeClass="active"
-						to="contacts"
-						spy={true}
-						smooth={true}
-						offset={-80}
-						duration={500}
-						style={{ marginRight: '.5em' }}
-					>
+					<a onClick={() => scroll.scrollToBottom({ duration: 800 })}>
 						<li className="pointer">Контакты</li>
-					</Link>
+					</a>
+                    <div style={{marginRight: ".33em"}}>
 					<Donate
 						setDonateDrawerOpen={setDonateDrawerOpen}
-						isDesktop={isDesktop}
 					/>
+                    </div>
 				</ul>
 			</nav>
 		</header>

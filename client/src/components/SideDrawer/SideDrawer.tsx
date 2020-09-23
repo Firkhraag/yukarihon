@@ -25,12 +25,13 @@ const SideDrawer = ({ closeButtonClick, isShown }: SideDrawerProps) => {
 				>
 					<li className="pointer">Главная</li>
 				</a>
-				<Link
+
+                <Link
 					activeClass="active"
 					to="about"
 					spy={true}
 					smooth={true}
-					offset={0}
+					offset={10}
 					duration={500}
 					onClick={closeButtonClick}
 				>
@@ -38,37 +39,45 @@ const SideDrawer = ({ closeButtonClick, isShown }: SideDrawerProps) => {
 				</Link>
 				<Link
 					activeClass="active"
-					to="events"
+					to="about_team"
 					spy={true}
 					smooth={true}
-					offset={-80}
+					offset={-100}
 					duration={500}
 					onClick={closeButtonClick}
 				>
-					<li className="pointer">Вход/Регистрация</li>
+					<li className="pointer">О команде</li>
+				</Link>
+				<Link
+					activeClass="active"
+					to="lectorium"
+					spy={true}
+					smooth={true}
+					offset={-133}
+					duration={500}
+					onClick={closeButtonClick}
+				>
+					<li className="pointer">Лекторий</li>
 				</Link>
 				<Link
 					activeClass="active"
 					to="faq"
 					spy={true}
 					smooth={true}
-					offset={-80}
+					offset={-100}
 					duration={500}
 					onClick={closeButtonClick}
 				>
 					<li className="pointer">F.A.Q.</li>
 				</Link>
-				<Link
-					activeClass="active"
-					to="contacts"
-					spy={true}
-					smooth={true}
-					offset={-80}
-					duration={500}
-					onClick={closeButtonClick}
+				<a
+					onClick={() => {
+						scroll.scrollToBottom({ duration: 800 })
+						closeButtonClick()
+					}}
 				>
 					<li className="pointer">Контакты</li>
-				</Link>
+				</a>
 			</ul>
 		</div>
 	)
