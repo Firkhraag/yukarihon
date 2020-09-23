@@ -19,8 +19,6 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 		headerStyle = 'header-hidden white-bg full-width flex-centered-vert'
 	}
 
-	let isDesktop = windowProperties.width >= 1080
-
 	return (
 		<header className={headerStyle}>
 			<a onClick={() => scroll.scrollToTop({ duration: 500 })}>
@@ -31,7 +29,7 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 					<Donate
 						setDonateDrawerOpen={setDonateDrawerOpen}
 					/>
-					<div onClick={drawerToggleClickHandler}>
+					<div onClick={drawerToggleClickHandler} style={{marginRight: '.5em'}}>
 						<DrawerToggleButton />
 					</div>
 				</div>
