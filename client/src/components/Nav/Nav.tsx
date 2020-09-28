@@ -35,39 +35,31 @@ const Nav = ({ drawerToggleClickHandler, setDonateDrawerOpen }: NavProps) => {
 				</div>
 				<ul>
 					<Link
-						activeClass="active"
 						to="about"
-						spy={true}
 						smooth={true}
 						offset={80}
-						duration={500}
-					>
-						<li className="pointer">О проекте</li>
-					</Link>
-					<Link
-						activeClass="active"
-						to="about_team"
-						spy={true}
-						smooth={true}
-						offset={-225}
-						duration={500}
-					>
-						<li className="pointer">О команде</li>
-					</Link>
-					<Link
-						activeClass="active"
-						to="lectorium"
-						spy={true}
-						smooth={true}
-						offset={-125}
 						duration={500}
 					>
 						<li className="pointer">Лекторий</li>
 					</Link>
 					<Link
-						activeClass="active"
+						to="about_team"
+						smooth={true}
+						offset={-225}
+						duration={500}
+					>
+						<li className="pointer">Команда</li>
+					</Link>
+					<Link
+						to="register"
+						smooth={true}
+						offset={-155}
+						duration={500}
+					>
+						<li className="pointer">Регистрация</li>
+					</Link>
+					<Link
 						to="faq"
-						spy={true}
 						smooth={true}
 						offset={-100}
 						duration={500}

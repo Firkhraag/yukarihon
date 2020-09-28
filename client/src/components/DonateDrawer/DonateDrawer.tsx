@@ -47,7 +47,7 @@ const DonateDrawer = ({ exitClick, isShown }: DonateDrawerProps) => {
 			<div className="desktop-font don-cnt">
 				<h2 className="text-centered">Помочь проекту</h2>
 				<p className="donate-desc-margin">
-					Ваша помощь идет на развитие проекта
+                    Ваши взносы идут на развитие проекта
 				</p>
 				<hr />
 				<p className="text-centered bold choose-sum">
@@ -55,7 +55,7 @@ const DonateDrawer = ({ exitClick, isShown }: DonateDrawerProps) => {
 				</p>
 				<div className="donate-btns">
 					<div className="flex-column-centered-row">
-						<p>Тодзама-даймё</p>
+						<p>Тодзама</p>
 						<button
 							className={'pointer' + firstButtonStyle}
 							onClick={() => setSelectedSumType(1)}
@@ -64,7 +64,7 @@ const DonateDrawer = ({ exitClick, isShown }: DonateDrawerProps) => {
 						</button>
 					</div>
 					<div className="flex-column-centered-row">
-						<p>Фудай-даймё</p>
+						<p>Фудай</p>
 						<button
 							className={'pointer' + secondButtonStyle}
 							onClick={() => setSelectedSumType(2)}
@@ -73,7 +73,7 @@ const DonateDrawer = ({ exitClick, isShown }: DonateDrawerProps) => {
 						</button>
 					</div>
 					<div className="flex-column-centered-row">
-						<p>Симпан-даймё</p>
+						<p>Симпан</p>
 						<button
 							className={'pointer' + thirdButtonStyle}
 							onClick={() => setSelectedSumType(3)}

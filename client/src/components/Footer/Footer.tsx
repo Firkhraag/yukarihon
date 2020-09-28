@@ -37,7 +37,7 @@ const Footer = () => {
 				</div>
 				<div className={ size[0] > 750 ? "footer-div" : "footer-div text-centered" }>
 					<p>
-						<span className="bold">Cтраница в ВКонтакте:</span>
+						<span className="bold">Cтраница ВКонтакте:</span>
 						<br />
 						<a
 							href="https://vk.com/yukarium"

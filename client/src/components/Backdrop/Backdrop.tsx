@@ -28,7 +28,7 @@ const Backdrop = ({
 	return (
 		<div className={backdropClasses} onMouseDown={onClick}>
 			<AskForm
-				isFormShown={isAskFormShown}
+				isShown={isAskFormShown}
 				exit={exitClick}
 			/>
 			<img

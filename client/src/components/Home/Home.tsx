@@ -22,14 +22,18 @@ const Home = () => {
 			/>
 			<h1 className="head">Юкари</h1>
 			<h1 className="head2">однажды в Эдо</h1>
-			<p className="subhead">японский лекторий</p>
+			<p className="subhead">японский онлайн-лекторий</p>
 			<p className="subhead">28–29 ноября 2020</p>
 			<Link
-				className="text-centered pointer bold"
-				to="lectorium"
+                className="text-centered pointer bold"
+				to="about"
 				smooth={true}
-				offset={-150}
+				offset={80}
 				duration={500}
+				// to="lectorium"
+				// smooth={true}
+				// offset={-150}
+				// duration={500}
 				onMouseEnter={() => setButtonHovered(true)}
 				onMouseLeave={() => setButtonHovered(false)}
 			>

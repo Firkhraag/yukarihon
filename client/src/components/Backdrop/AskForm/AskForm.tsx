@@ -4,11 +4,11 @@ import logo from '../../../assets/images/logo.svg'
 import './AskForm.css'
 
 type AskFormProps = {
-	isFormShown: boolean
+	isShown: boolean
 	exit: () => void
 }
 
-const AskForm = ({ isFormShown, exit }: AskFormProps) => {
+const AskForm = ({ isShown, exit }: AskFormProps) => {
 	const [submitButtonClicked, setSubmitButtonClicked] = useState(false)
 	const [inputValues, setInputValues] = useState({
 		name: '',
@@ -80,9 +80,9 @@ const AskForm = ({ isFormShown, exit }: AskFormProps) => {
 	}
 
 	let formClasses = 'hide'
-	if (isFormShown) {
+	if (isShown) {
 		formClasses =
-			'form no-blur border-radius white-bg flex-column-centered-row show'
+			'form-ask no-blur border-radius white-bg flex-column-centered-row show'
 	}
 
 	const getButtonStyle = () => {
@@ -138,7 +138,7 @@ const AskForm = ({ isFormShown, exit }: AskFormProps) => {
 				<input
 					type="text"
 					name="password"
-					style={{ position: 'absolute', opacity: 0 }}
+					style={{ display: 'none' }}
 					tabIndex={-1}
 					autoComplete="off"
 					onChange={onHoneyChange}

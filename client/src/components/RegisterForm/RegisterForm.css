@@ -1,57 +1,36 @@
-.form-ask {
-	position: absolute;
-	top: 10%;
-	left: 50%;
-	margin-left: -256px;
-	width: 510px;
-	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.25);
-	padding: 1em 1em 0.25em 1em;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	z-index: 180;
-	animation: pop 0.5s ease-in-out;
-	margin-bottom: 10vh;
-	box-sizing: border-box;
+.form-reg {
+    width: 510px;
+    margin: 1em auto;
+	/* padding: 1em; */
 }
 
-@keyframes pop {
-	0% {
-		top: 100%;
-	}
-	80% {
-		top: 5%;
-	}
-	100% {
-		top: 10%;
-	}
-}
-
-.form-ask .input-fields input,
-.form-ask .input-fields textarea {
+.form-reg .input-fields input,
+.form-reg .input-fields textarea {
 	padding: 1em;
 	box-sizing: border-box;
 	font-size: 1em;
 }
 
-.form-ask .input-fields input:focus + label,
-.form-ask .input-fields textarea:focus + label {
+.form-reg .input-fields input:focus + label,
+.form-reg .input-fields textarea:focus + label {
 	color: var(--violet);
 }
 
-.form-ask .input-fields input:focus ~ label,
-.form-ask .input-fields textarea:focus ~ label {
+.form-reg .input-fields input:focus ~ label,
+.form-reg .input-fields textarea:focus ~ label {
 	color: var(--violet);
 }
 
-.form-ask .input-fields input:focus ~ label,
-.form-ask .input-fields input:valid ~ label,
-.form-ask .input-fields textarea:focus ~ label,
-.form-ask .input-fields textarea:valid ~ label {
+.form-reg .input-fields input:focus ~ label,
+.form-reg .input-fields input:valid ~ label,
+.form-reg .input-fields textarea:focus ~ label,
+.form-reg .input-fields textarea:valid ~ label {
 	top: -8px;
 	font-size: 0.7em;
 	font-weight: bold;
 }
 
-.form-ask .input-fields label {
+.form-reg .input-fields label {
 	position: absolute;
 	top: 15px;
 	left: 1.5em;
@@ -63,30 +42,30 @@
 	background: #fff;
 }
 
-.form-ask .input-fields textarea {
+.form-reg .input-fields textarea {
 	resize: none;
 	height: 200px;
 }
 
-.form-ask img {
+.form-reg img {
 	width: 45%;
 }
 
-.form-ask .input-margin-bottom {
+.form-reg .input-margin-bottom {
 	margin-bottom: 1.25em;
 }
 
-.form-ask .checkbox-margin-bottom {
+.form-reg .checkbox-margin-bottom {
 	margin-bottom: 0.25em;
 }
 
-.form-ask-logo {
+.form-reg-logo {
 	margin-top: 1em;
 	margin-bottom: 1.5em;
 	user-select: none;
 }
 
-.form-ask .checkbox {
+.form-reg .checkbox {
 	min-width: 18px;
 	height: 18px;
 	border: 1.5px solid #000;
@@ -330,9 +309,8 @@
 }
 
 @media only screen and (max-width: 600px) {
-	.form-ask {
+	.form-reg {
 		width: 380px;
-		margin-left: -191px;
 	}
 	.form-inputs-width {
 		width: 285px;
@@ -340,9 +318,8 @@
 }
 
 @media only screen and (max-width: 400px) {
-	.form-ask {
+	.form-reg {
 		width: 310px;
-		margin-left: -156px;
 	}
 	.form-inputs-width {
 		width: 250px;

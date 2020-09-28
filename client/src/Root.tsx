@@ -6,6 +6,7 @@ import Home from './components/Home/Home'
 import About from './components/About/About'
 import AboutWithPhotos from './components/AboutWithPhotos/AboutWithPhotos'
 import Lectorium from './components/Lectorium/Lectorium'
+import RegisterForm from './components/RegisterForm/RegisterForm'
 import Faq from './components/Faq/Faq'
 import Backdrop from './components/Backdrop/Backdrop'
 import SideDrawer from './components/SideDrawer/SideDrawer'
@@ -76,9 +77,12 @@ const Root = () => {
 				<Element name="about_team">
 					<AboutWithPhotos />
 				</Element>
-				<Element name="lectorium">
-					<Lectorium />
+                <Element name="register">
+					<RegisterForm />
 				</Element>
+				{/* <Element name="lectorium">
+					<Lectorium />
+				</Element> */}
 				<Element name="faq">
 					<Faq
 						buttonClick={openAskForm}
