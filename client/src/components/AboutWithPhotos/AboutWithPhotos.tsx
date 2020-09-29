@@ -1,8 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AboutProject from './AboutProject'
+import emperor from '../../assets/images/emperor.jpg'
+import discussionClub from '../../assets/images/discussionclub.jpg'
+import tobe from '../../assets/images/tobe.jpg'
+import karuta from '../../assets/images/karuta.jpg'
+import eiga from '../../assets/images/eiga.jpg'
+import culture from '../../assets/images/culture.jpg'
 import './AboutWithPhotos.css'
 
 const AboutWithPhotos = () => {
+	const defaultState = {
+		isShown1: false,
+		isShown2: false,
+		isShown3: false,
+		isShown4: false,
+		isShown5: false,
+		isShown6: false,
+	}
+	const [descShownState, setDescShownState] = useState(defaultState)
+
+	const setDescShown = (num: number) => {
+		switch (num) {
+			case 1:
+				setDescShownState({ ...defaultState, isShown1: true })
+				break
+			case 2:
+				setDescShownState({ ...defaultState, isShown2: true })
+				break
+			case 3:
+				setDescShownState({ ...defaultState, isShown3: true })
+				break
+			case 4:
+				setDescShownState({ ...defaultState, isShown4: true })
+				break
+			case 5:
+				setDescShownState({ ...defaultState, isShown5: true })
+				break
+			case 6:
+				setDescShownState({ ...defaultState, isShown6: true })
+                break
+            default:
+                setDescShownState(defaultState)
+                break
+		}
+	}
+
 	return (
 		<div className="about-with-p">
 			{/* <p className="desktop-font line-height text-centered">
@@ -25,34 +67,72 @@ const AboutWithPhotos = () => {
 				После мероприятия студенты и школьники влились в 6
 				японистических проектов:
 			</p>
-			<AboutProject
-				title="«Повесть об Императоре»"
-				desc="Страница ВКонтакте, посвящённая средневековой Японии. Мы освещаем неоднозначные проблемы изучения сёгуната Камакура и Муромати, героев реставрации Кэмму и военачальников Сэнгоку, театр и конфуцианских авторов, буддийских наставников и законодателей Японии XII-XVI веков! Также проводим стримы и публикуем обзоры тематической литературы."
-			/>
-            <AboutProject
-				title="Научно-дискуссионный клуб по Японии"
-				desc="Клуб для обсуждения широкого спектра проблем японистики в целом, а также пространство самореализации как начинающих исследователей Японии, так и опытных японистов. Платформа для дискуссий, докладов и семинаров от студентов!"
-			/>
-            <AboutProject
-				title="Музыкальная группа «Tobe»"
-				desc="Проект молодых вдохновлённых j-роком исполнителей, влюблённых в Японию и готовых снискать мировую славу. Труппа регулярно репетирует и готовится к выпуску авторского альбома, наполненного японскими мотивами."
-			/>
-            <AboutProject
-				title="Московский карута-клуб"
-				desc="Кё:ги карута – соревновательная карточная игра, популярная в Японии. Участники встречаются каждые выходные, чтобы совершенствоваться в искусстве сложения строф из строчек великих японских поэтов – в этом и заключается суть игры. Чемпионаты и встречи, дружные единомышленники и карута – добро пожаловать!"
-			/>
-            <AboutProject
-				title="Киноклуб «Boku no eiga»"
-				desc="Почти домашний киноклуб, по совместительству блог. В нашем объективе японское кино. Встречаемся по пятницам, пьем тёплый чай, смотрим кино и устраиваем обсуждение. Так это было на протяжении 2019-2020 учебного года. Проект завершился, дав почву для глубоких размышлений и оставив тёплые воспоминания."
-			/>
-            <AboutProject
-				title="Неделя японской культуры в Лицее НИУ ВШЭ"
-				desc="Знакомство с традиционными японскими сладостями, совместный просмотр классиков японской анимации и кинематографа, лекция по стереотипам об истории Японии – проект лицеистов НИУ ВШЭ направления «Востоковедение», успешно завершившийся и подаривший бурю эмоций не только организаторам, но и участникам."
-			/>
-            <AboutProject
-				title="Команда «Юкари»"
-				desc="Начинающие японисты и единомышленники, по уши влюблённые в Японию. В нашем составе студенты и школьники, готовые и шутку пошутить, и крупнейшее образовательное событие по Японии провести."
-			/>
+			<div className="about-img-cnt">
+				<AboutProject
+					img={emperor}
+					title="«Повесть об Императоре»"
+					desc="Страница ВКонтакте, посвящённая средневековой Японии. Мы освещаем неоднозначные проблемы изучения сёгуната Камакура и Муромати, героев реставрации Кэмму и военачальников Сэнгоку, театр и конфуцианских авторов, буддийских наставников и законодателей Японии XII-XVI веков! Также проводим стримы и публикуем обзоры тематической литературы."
+                    style="about-img1"
+                    isDescShown={descShownState.isShown1}
+                    setDescShown={() => setDescShown(1)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				<AboutProject
+					img={discussionClub}
+					title="Научно-дискуссионный клуб по Японии"
+					desc="Клуб для обсуждения широкого спектра проблем японистики в целом, а также пространство самореализации как начинающих исследователей Японии, так и опытных японистов. Платформа для дискуссий, докладов и семинаров от студентов!"
+                    style="about-img2"
+                    isDescShown={descShownState.isShown2}
+                    setDescShown={() => setDescShown(2)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				<AboutProject
+					img={tobe}
+					title="Музыкальная группа «Tobe»"
+					desc="Проект молодых вдохновлённых j-роком исполнителей, влюблённых в Японию и готовых снискать мировую славу. Труппа регулярно репетирует и готовится к выпуску авторского альбома, наполненного японскими мотивами."
+                    style="about-img2"
+                    isDescShown={descShownState.isShown3}
+                    setDescShown={() => setDescShown(3)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				<AboutProject
+					img={karuta}
+					title="Московский карута-клуб"
+					desc="Кё:ги карута – соревновательная карточная игра, популярная в Японии. Участники встречаются каждые выходные, чтобы совершенствоваться в искусстве сложения строф из строчек великих японских поэтов – в этом и заключается суть игры. Чемпионаты и встречи, дружные единомышленники и карута – добро пожаловать!"
+                    style="about-img2"
+                    isDescShown={descShownState.isShown4}
+                    setDescShown={() => setDescShown(4)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				<AboutProject
+					img={eiga}
+					title="Киноклуб «Boku no eiga»"
+					desc="Почти домашний киноклуб, по совместительству блог. В нашем объективе японское кино. Встречаемся по пятницам, пьем тёплый чай, смотрим кино и устраиваем обсуждение. Так это было на протяжении 2019-2020 учебного года. Проект завершился, дав почву для глубоких размышлений и оставив тёплые воспоминания."
+                    style="about-img2"
+                    isDescShown={descShownState.isShown5}
+                    setDescShown={() => setDescShown(5)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				<AboutProject
+					img={culture}
+					title="Неделя японской культуры в Лицее НИУ ВШЭ"
+					desc="Знакомство с традиционными японскими сладостями, совместный просмотр классиков японской анимации и кинематографа, лекция по стереотипам об истории Японии – проект лицеистов НИУ ВШЭ направления «Востоковедение», успешно завершившийся и подаривший бурю эмоций не только организаторам, но и участникам."
+                    style="about-img2"
+                    isDescShown={descShownState.isShown6}
+                    setDescShown={() => setDescShown(6)}
+                    setDescClose={() => setDescShown(-1)}
+				/>
+				{/* <AboutProject
+                    title="Команда «Юкари»"
+                    desc="Начинающие японисты и единомышленники, по уши влюблённые в Японию. В нашем составе студенты и школьники, готовые и шутку пошутить, и крупнейшее образовательное событие по Японии провести."
+                /> */}
+			</div>
+			<p className="desktop-font line-height text-centered">
+				<strong>Команда «Юкари»</strong> – начинающие японисты и
+				единомышленники, по уши влюблённые в Японию. В нашем составе
+				студенты и школьники, готовые и шутку пошутить, и крупнейшее
+				образовательное событие по Японии провести.
+			</p>
 		</div>
 	)
 }
