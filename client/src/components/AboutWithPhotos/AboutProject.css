@@ -9,9 +9,9 @@
 }
 
 .about-proj-desc {
-    width: 250px;
-    padding: .75em;
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
+    width: 275px;
+    padding: 1em;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
     z-index: 5;
 }
 

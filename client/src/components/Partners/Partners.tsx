@@ -350,7 +350,7 @@ const Partners = () => {
                             img={sakura}
                             site={'https://vk.com/great_japan2020'}
                             name={'Проект «Сакура и Хризантема»'}
-                            style={'partner-logo-6'} />
+                            style={'partner-logo-3'} />
 					</li>
 				</ul>
 			</div>

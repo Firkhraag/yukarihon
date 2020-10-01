@@ -8,7 +8,7 @@
 .about-img-cnt {
     margin: 2em 0;
     display: grid;
-    gap: 25px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     justify-items: center;
 }

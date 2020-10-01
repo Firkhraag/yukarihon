@@ -14,8 +14,7 @@ const AboutWithPhotos = () => {
 		isShown2: false,
 		isShown3: false,
 		isShown4: false,
-		isShown5: false,
-		isShown6: false,
+		isShown5: false
 	}
 	const [descShownState, setDescShownState] = useState(defaultState)
 
@@ -36,9 +35,6 @@ const AboutWithPhotos = () => {
 			case 5:
 				setDescShownState({ ...defaultState, isShown5: true })
 				break
-			case 6:
-				setDescShownState({ ...defaultState, isShown6: true })
-                break
             default:
                 setDescShownState(defaultState)
                 break
@@ -87,21 +83,12 @@ const AboutWithPhotos = () => {
                     setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
-					img={tobe}
-					title="Музыкальная группа «Tobe»"
-					desc="Проект молодых вдохновлённых j-роком исполнителей, влюблённых в Японию и готовых снискать мировую славу. Труппа регулярно репетирует и готовится к выпуску авторского альбома, наполненного японскими мотивами."
-                    style="about-img2"
-                    isDescShown={descShownState.isShown3}
-                    setDescShown={() => setDescShown(3)}
-                    setDescClose={() => setDescShown(-1)}
-				/>
-				<AboutProject
 					img={karuta}
 					title="Московский карута-клуб"
 					desc="Кё:ги карута – соревновательная карточная игра, популярная в Японии. Участники встречаются каждые выходные, чтобы совершенствоваться в искусстве сложения строф из строчек великих японских поэтов – в этом и заключается суть игры. Чемпионаты и встречи, дружные единомышленники и карута – добро пожаловать!"
                     style="about-img2"
-                    isDescShown={descShownState.isShown4}
-                    setDescShown={() => setDescShown(4)}
+                    isDescShown={descShownState.isShown3}
+                    setDescShown={() => setDescShown(3)}
                     setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
@@ -109,8 +96,8 @@ const AboutWithPhotos = () => {
 					title="Киноклуб «Boku no eiga»"
 					desc="Почти домашний киноклуб, по совместительству блог. В нашем объективе японское кино. Встречаемся по пятницам, пьем тёплый чай, смотрим кино и устраиваем обсуждение. Так это было на протяжении 2019-2020 учебного года. Проект завершился, дав почву для глубоких размышлений и оставив тёплые воспоминания."
                     style="about-img2"
-                    isDescShown={descShownState.isShown5}
-                    setDescShown={() => setDescShown(5)}
+                    isDescShown={descShownState.isShown4}
+                    setDescShown={() => setDescShown(4)}
                     setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
@@ -118,8 +105,8 @@ const AboutWithPhotos = () => {
 					title="Неделя японской культуры в Лицее НИУ ВШЭ"
 					desc="Знакомство с традиционными японскими сладостями, совместный просмотр классиков японской анимации и кинематографа, лекция по стереотипам об истории Японии – проект лицеистов НИУ ВШЭ направления «Востоковедение», успешно завершившийся и подаривший бурю эмоций не только организаторам, но и участникам."
                     style="about-img2"
-                    isDescShown={descShownState.isShown6}
-                    setDescShown={() => setDescShown(6)}
+                    isDescShown={descShownState.isShown5}
+                    setDescShown={() => setDescShown(5)}
                     setDescClose={() => setDescShown(-1)}
 				/>
 				{/* <AboutProject
