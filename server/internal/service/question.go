@@ -5,15 +5,13 @@ import (
 	"github.com/firkhraag/yukari/internal/model"
 )
 
-var (
-	mailService = NewSendgridSevice()
-)
-
-type questionService struct{}
+type questionService struct {
+	mailService MailService
+}
 
 // NewQuestionService creates a new instance of QuestionController
-func NewQuestionService() QuestionService {
-	return &questionService{}
+func NewQuestionService(mailService MailService) QuestionService {
+	return &questionService{mailService}
 }
 
 func (s *questionService) AskQuestion(question *model.Question) error {
@@ -23,11 +21,11 @@ func (s *questionService) AskQuestion(question *model.Question) error {
 	if err := question.Validate(); err != nil {
 		return custom_error.ErrInvalidUser
 	}
-	return mailService.SendEmail(
-		"Yukari",
-		"yukari.lectorium@gmail.com",
+	return s.mailService.SendEmail(
 		question.User.Username,
 		question.User.Email,
+		"Yukari",
+		"yukari.lectorium@gmail.com",
 		"Вопрос",
 		question.Question,
 	)

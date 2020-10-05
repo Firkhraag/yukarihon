@@ -1,14 +1,14 @@
 package service
 
-type sendgridSevice struct{}
+type sendgridService struct{}
 
-// NewSendgridSevice creates a new instance of MailService
-func NewSendgridSevice() MailService {
-	return &sendgridSevice{}
+// NewSendgridService creates a new instance of MailService
+func NewSendgridService() MailService {
+	return &sendgridService{}
 }
 
 // SendEmail sends an email with given information
-func (s *sendgridSevice) SendEmail(
+func (s *sendgridService) SendEmail(
 	fromName string,
 	fromAddr string,
 	toName string,

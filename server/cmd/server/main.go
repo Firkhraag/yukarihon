@@ -17,9 +17,6 @@ import (
 var (
 	port = os.Getenv("PORT")
 	r    = router.NewMuxRouter()
-
-	questionService    = service.NewQuestionService()
-	questionController = controller.NewQuestionController(questionService)
 )
 
 func main() {
@@ -41,9 +38,14 @@ func main() {
 		return
 	}
 
+	sendgridService := service.NewSendgridService()
+
 	userRepository := repository.NewPgUserRepository(db)
-	userService := service.NewUserService(userRepository)
+	userService := service.NewUserService(userRepository, sendgridService)
 	userController := controller.NewUserController(userService)
+
+	questionService := service.NewQuestionService(sendgridService)
+	questionController := controller.NewQuestionController(questionService)
 
 	// CORS
 	r.CORS([]string{
