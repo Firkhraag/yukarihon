@@ -1,8 +1,7 @@
 package service
 
 import (
-	"errors"
-
+	"github.com/firkhraag/yukari/internal/custom_error"
 	"github.com/firkhraag/yukari/internal/model"
 )
 
@@ -19,10 +18,10 @@ func NewQuestionService() QuestionService {
 
 func (s *questionService) AskQuestion(question *model.Question) error {
 	if question == nil {
-		return errors.New("Nil question")
+		return custom_error.ErrInvalidUser
 	}
 	if err := question.Validate(); err != nil {
-		return err
+		return custom_error.ErrInvalidUser
 	}
 	return mailService.SendEmail(
 		"Yukari",
@@ -30,6 +29,6 @@ func (s *questionService) AskQuestion(question *model.Question) error {
 		question.User.Username,
 		question.User.Email,
 		"Вопрос",
-		question.Text,
+		question.Question,
 	)
 }

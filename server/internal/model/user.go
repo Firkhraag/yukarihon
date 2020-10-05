@@ -7,7 +7,7 @@ type User struct {
 	ID       int    `json:"id"`
 	Username string `json:"username" validate:"min=1,max=100"`
 	Email    string `json:"email" validate:"email,min=3,max=255"`
-	Date     string `json:"date"`
+	Date     string `json:"date,omitempty"`
 }
 
 // Validate user fields

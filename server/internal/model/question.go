@@ -4,9 +4,9 @@ import "github.com/go-playground/validator/v10"
 
 // Question model
 type Question struct {
-	ID   int    `json:"id"`
-	Text string `json:"text" validate:"min=4,max=5000"`
-	User User   `json:"user"`
+	ID       int    `json:"id"`
+	Question string `json:"question" validate:"min=4,max=5000"`
+	User     User   `json:"user"`
 }
 
 // Validate question fields

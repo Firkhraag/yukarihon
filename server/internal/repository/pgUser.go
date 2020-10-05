@@ -19,7 +19,7 @@ func NewPgUserRepository(db *sql.DB) UserRepository {
 }
 
 func (r *pgUserRepository) GetAll() ([]*model.User, error) {
-	rows, err := r.db.Query("SELECT id, username, email, date FROM users ORDER BY created DESC")
+	rows, err := r.db.Query("SELECT id, username, email, date FROM users ORDER BY date DESC")
 	if err != nil {
 		return nil, err
 	}
