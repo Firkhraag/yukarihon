@@ -11,8 +11,8 @@ services:
             dockerfile: Dockerfile
         ports:
             - "8080:8080"
-        # environment:
-        #     - SENDGRID_API_KEY=key
+        environment:
+            - SENDGRID_API_KEY=${SENDGRID_API_KEY}
     migration:
         depends_on:
             - postgres
@@ -29,3 +29,5 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=password
             - POSTGRES_DB=yukari
+        # volumes:
+        #     - /private/var/lib/postgresql:/var/lib/postgresql
