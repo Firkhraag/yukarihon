@@ -1,5 +1,6 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import httpClient from '../../axios'
 import './RegisterForm.css'
 
 const RegisterForm = () => {
@@ -7,14 +8,12 @@ const RegisterForm = () => {
 	const [inputValues, setInputValues] = useState({
 		name: '',
 		email: '',
-		question: '',
 	})
 	const [honeyPass, setHoneyPass] = useState('')
 
 	const onHoneyChange = (event: React.FormEvent<HTMLInputElement>) => {
 		setHoneyPass(event.currentTarget.value)
 	}
-
 	const onNameChange = (event: React.FormEvent<HTMLInputElement>) => {
 		const name = event.currentTarget.value
 		setInputValues({ ...inputValues, name: name })
@@ -67,18 +66,27 @@ const RegisterForm = () => {
 		}
 	}
 
-	const submitButtonClickHandler = () => {
+	const submitButtonClickHandler = async () => {
 		if (readyToBeSubmitted) {
 			if (honeyPass === '') {
-				setSubmitButtonClicked(!submitButtonClicked)
-				setTimeout(() => {
-					setSubmitButtonClicked(false)
-				}, 4500)
+				try {
+					await httpClient.post('/add', {
+						email: inputValues.email,
+						username: inputValues.name,
+					})
+					setSubmitButtonClicked(!submitButtonClicked)
+					setTimeout(() => {
+                        localStorage.setItem('yukariRegistration', 'true')
+                        setSubmitButtonClicked(false)
+					}, 4500)
+				} catch (e) {
+					console.log('Error occured!')
+				}
 			}
 		}
 	}
 
-	return (
+	return localStorage.getItem('yukariRegistration') != null ? null : (
 		<div className="margin-from-prev-comp">
 			<h1 className="text-centered">Регистрация</h1>
 			<div className="form-reg flex-column-centered-row">

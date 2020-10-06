@@ -20,12 +20,21 @@ var (
 )
 
 func main() {
+
+	log.Println("Starting the program")
+
 	// Default port is :8080
 	if port == "" {
 		port = ":8080"
 	}
 
-	databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
+	// databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
+	databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
+		"postgres",
+		"password",
+		"postgres",
+		"yukari",
+	)
 
 	db, err := sql.Open("postgres", databaseURL)
 	if err != nil {
@@ -64,6 +73,8 @@ func main() {
 	)
 	r.POST("/api/add", userController.Add)
 	r.POST("/api/ask", questionController.AskQuestion)
+
+	log.Println("Starting the server")
 
 	// Start the server
 	r.SERVE(port, 120, 120, 120)

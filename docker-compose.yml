@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+    server:
+        restart: always
+        depends_on:
+            - postgres
+            - migration
+        # image: "firkhraag/yukari"
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        ports:
+            - "8080:8080"
+        # environment:
+        #     - SENDGRID_API_KEY=key
+    migration:
+        depends_on:
+            - postgres
+        # image: "firkhraag/yukari-migration"
+        build:
+            context: ./migration
+            dockerfile: Dockerfile
+    postgres:
+        restart: always
+        image: "postgres:alpine"
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=password
+            - POSTGRES_DB=yukari

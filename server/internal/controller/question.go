@@ -43,5 +43,5 @@ func (c *questionController) AskQuestion(w http.ResponseWriter, r *http.Request)
 		return
 	}
 	w.WriteHeader(http.StatusNoContent)
-	log.Println("HTTP POST /api/ask responded 200")
+	log.Println("HTTP POST /api/ask responded 204")
 }

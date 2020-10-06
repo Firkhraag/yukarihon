@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import httpClient from '../../../axios'
 import logo from '../../../assets/images/logo.svg'
 import './AskForm.css'
 
@@ -93,14 +94,25 @@ const AskForm = ({ isShown, exit }: AskFormProps) => {
 		}
 	}
 
-	const submitButtonClickHandler = () => {
+	const submitButtonClickHandler = async () => {
 		if (readyToBeSubmitted) {
 			if (honeyPass === '') {
-				setSubmitButtonClicked(!submitButtonClicked)
-				setTimeout(() => {
-					exit()
-					setSubmitButtonClicked(false)
-				}, 4500)
+                try {
+                    await httpClient.post('/ask', {
+                        user: {
+                            email: inputValues.email,
+                            username: inputValues.name,
+                        },
+                        question: inputValues.question,
+                    })
+                    setSubmitButtonClicked(!submitButtonClicked)
+                    setTimeout(() => {
+                        exit()
+                        setSubmitButtonClicked(false)
+                    }, 4500)
+                } catch (e) {
+                    console.log('Error occured!')
+                }
 			}
 		}
 	}
