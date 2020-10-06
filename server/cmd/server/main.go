@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"net/http"
 	"os"
 
 	"github.com/firkhraag/yukari/internal/controller"
@@ -25,7 +26,7 @@ func main() {
 
 	// Default port is :8080
 	if port == "" {
-		port = ":8080"
+		port = "8080"
 	}
 
 	// databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
@@ -58,7 +59,7 @@ func main() {
 
 	// CORS
 	r.CORS([]string{
-		fmt.Sprintf("http://localhost%s", port),
+		fmt.Sprintf("http://localhost:%s", port),
 	})
 
 	// Client endpoints and static files
@@ -67,6 +68,13 @@ func main() {
 	})
 
 	// Server endpoints
+	r.GET(
+		"/api/test/hello-world",
+		func(w http.ResponseWriter, r *http.Request) {
+			fmt.Fprintf(w, "Hello, traveller!")
+		},
+	)
+
 	r.GET(
 		"/api/users/fa63ee1067bdbc0-4121-43b2-b7c5-742c2dbbd0dd830f33c7-9cbd-4fc8-bae1-2cc46a378dcc20b0834f-3c76-41e1-a133-f50fd382621ce6307038",
 		userController.GetAll,

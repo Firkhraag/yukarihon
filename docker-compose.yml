@@ -10,9 +10,10 @@ services:
             context: ./server
             dockerfile: Dockerfile
         ports:
-            - "8080:8080"
+            - "${PORT}:${PORT}"
         environment:
             - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+            - PORT=${PORT}
     migration:
         depends_on:
             - postgres

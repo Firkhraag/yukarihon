@@ -83,7 +83,7 @@ func (r *router) STATIC(dir string, uris []string) {
 func (r *router) SERVE(port string, idleTimeout uint16, readTimeout uint16, writeTimeout uint16) {
 	// Http server
 	s := &http.Server{
-		Addr:         port,
+		Addr:         fmt.Sprintf(":%s", port),
 		Handler:      r.mux,
 		IdleTimeout:  time.Duration(idleTimeout) * time.Second,
 		ReadTimeout:  time.Duration(readTimeout) * time.Second,
