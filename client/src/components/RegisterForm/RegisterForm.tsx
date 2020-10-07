@@ -75,10 +75,9 @@ const RegisterForm = () => {
 						username: inputValues.name,
 					})
 					setSubmitButtonClicked(!submitButtonClicked)
-					setTimeout(() => {
-                        localStorage.setItem('yukariRegistration', 'true')
-                        setSubmitButtonClicked(false)
-					}, 4500)
+					// setTimeout(() => {
+                    //     setSubmitButtonClicked(false)
+					// }, 4500)
 				} catch (e) {
 					console.log('Error occured!')
 				}
@@ -86,7 +85,7 @@ const RegisterForm = () => {
 		}
 	}
 
-	return localStorage.getItem('yukariRegistration') != null ? null : (
+	return (
 		<div className="margin-from-prev-comp">
 			<h1 className="text-centered">Регистрация</h1>
 			<div className="form-reg flex-column-centered-row">

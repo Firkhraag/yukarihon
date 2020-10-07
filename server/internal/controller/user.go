@@ -20,6 +20,8 @@ func NewUserController(service service.UserService) UserController {
 }
 
 func (c *userController) GetAll(w http.ResponseWriter, r *http.Request) {
+	// w.Header().Set("Access-Control-Allow-Origin", "*")
+	// w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	w.Header().Add("Content-Type", "application/json")
 	users, err := c.service.GetAll()
 	if err != nil {
@@ -34,6 +36,8 @@ func (c *userController) GetAll(w http.ResponseWriter, r *http.Request) {
 }
 
 func (c *userController) Add(w http.ResponseWriter, r *http.Request) {
+	// w.Header().Set("Access-Control-Allow-Origin", "*")
+	// w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	w.Header().Add("Content-Type", "application/json")
 	u := &model.User{}
 	if err := json.NewDecoder(r.Body).Decode(u); err != nil {

@@ -20,6 +20,8 @@ func NewQuestionController(service service.QuestionService) QuestionController {
 }
 
 func (c *questionController) AskQuestion(w http.ResponseWriter, r *http.Request) {
+	// w.Header().Set("Access-Control-Allow-Origin", "*")
+    // w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	q := &model.Question{}
 	if err := json.NewDecoder(r.Body).Decode(q); err != nil {
 		w.Header().Add("Content-Type", "application/json")

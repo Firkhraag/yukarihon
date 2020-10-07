@@ -13,13 +13,16 @@ import (
 )
 
 func main() {
-	// databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
-	databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
-		"postgres",
-		"password",
-		"postgres",
-		"yukari",
-	)
+	// Development
+	databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
+	
+	// Production
+	// databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
+	// 	"postgres",
+	// 	"password",
+	// 	"postgres",
+	// 	"yukari",
+	// )
 
 	db, err := sql.Open("postgres", databaseURL)
 	if err != nil {

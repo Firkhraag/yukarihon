@@ -26,10 +26,13 @@ func main() {
 
 	// Default port is :8080
 	if port == "" {
-		port = "8080"
+		port = "5000"
 	}
 
+	// Development
 	// databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
+
+	// Production
 	databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
 		"postgres",
 		"password",
@@ -58,19 +61,25 @@ func main() {
 	questionController := controller.NewQuestionController(questionService)
 
 	// CORS
-	r.CORS([]string{
-		fmt.Sprintf("http://localhost:%s", port),
-	})
+	// r.CORS([]string{
+	// 	fmt.Sprintf("http://localhost:%s", port),
+	// })
+	// r.CORS([]string{
+	// 	"*",
+	// })
+
+	// r.USE(CORS)
 
 	// Client endpoints and static files
-	r.STATIC("../public", []string{
-		"/policy",
-	})
+	// r.STATIC("../public", []string{
+	// 	"/policy",
+	// })
 
 	// Server endpoints
 	r.GET(
 		"/api/test/hello-world",
 		func(w http.ResponseWriter, r *http.Request) {
+			// w.Header().Set("Access-Control-Allow-Origin", "*")
 			fmt.Fprintf(w, "Hello, traveller!")
 		},
 	)
@@ -86,4 +95,24 @@ func main() {
 
 	// Start the server
 	r.SERVE(port, 120, 120, 120)
+}
+
+// CORS Middleware
+func CORS(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+
+		// Set headers
+		w.Header().Set("Access-Control-Allow-Headers:", "*")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "*")
+
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+
+		// Next
+		next.ServeHTTP(w, r)
+		return
+	})
 }

@@ -1,6 +1,7 @@
 package service
 
 import (
+	"log"
 	"os"
 
 	"github.com/sendgrid/sendgrid-go"
@@ -33,6 +34,10 @@ func (s *sendgridService) SendEmail(
 	message := mail.NewV3MailInit(from, subject, to, content)
 
 	client := sendgrid.NewSendClient(os.Getenv("SENDGRID_API_KEY"))
-	_, err := client.Send(message)
+	response, err := client.Send(message)
+	log.Println("Sendgrid info:")
+	log.Println(response.StatusCode)
+	log.Println(response.Body)
+	log.Println(response.Headers)
 	return err
 }

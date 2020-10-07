@@ -50,8 +50,11 @@ func (r *router) USE(f func(next http.Handler) http.Handler) {
 }
 
 // Cross-Origin Resource Sharing
-func (r *router) CORS(origins []string) {
-	r.mux.Use(handlers.CORS(handlers.AllowedOrigins(origins)))
+func (r *router) CORS(originsArr []string) {
+	headers := handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"})
+	methods := handlers.AllowedMethods([]string{"GET", "POST", "PUT", "DELETE"})
+	origins := handlers.AllowedOrigins(originsArr)
+	r.mux.Use(handlers.CORS(headers, methods, origins))
 }
 
 // Static files and frontend endpoints
@@ -81,17 +84,23 @@ func (r *router) STATIC(dir string, uris []string) {
 
 // Starting the server
 func (r *router) SERVE(port string, idleTimeout uint16, readTimeout uint16, writeTimeout uint16) {
+	headers := handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"})
+	methods := handlers.AllowedMethods([]string{"GET", "POST", "PUT", "DELETE", "OPTIONS"})
+	origins := handlers.AllowedOrigins([]string{"*"})
 	// Http server
 	s := &http.Server{
 		Addr:         fmt.Sprintf(":%s", port),
-		Handler:      r.mux,
+		Handler:      handlers.CORS(headers, methods, origins)(r.mux),
 		IdleTimeout:  time.Duration(idleTimeout) * time.Second,
 		ReadTimeout:  time.Duration(readTimeout) * time.Second,
 		WriteTimeout: time.Duration(writeTimeout) * time.Second,
 	}
 	// Goroutine for graceful shutdown
 	go func() {
-		if err := s.ListenAndServe(); err != nil {
+		// Production
+		if err := s.ListenAndServeTLS("/app/letsencrypt/fullchain.pem", "/app/letsencrypt/privkey.pem"); err != nil {
+			// Development
+			// if err := s.ListenAndServe(); err != nil {
 			log.Fatal(err)
 		}
 	}()
