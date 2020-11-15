@@ -43975,7 +43975,7 @@ const Partners = () => {
     };
     return (react_1.default.createElement("div", { className: "margin-from-prev-comp" },
         react_1.default.createElement("div", { className: "partners relative" },
-            react_1.default.createElement("h1", { className: "text-centered" }, "\u041D\u0430\u0448\u0438 \u043F\u0430\u0440\u0442\u043D\u0435\u0440\u044B"),
+            react_1.default.createElement("h1", { className: "text-centered" }, "\u041F\u043E\u043B\u0435\u0437\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438"),
             react_1.default.createElement("ul", { className: "cards-cnt cards-cnt-grid1", ref: scrollRef1 },
                 react_1.default.createElement("li", null,
                     react_1.default.createElement(PartnerCard_1.default, { img: hse_blue_svg_1.default, site: 'https://we.hse.ru/', name: 'Факультет мировой экономики и политики НИУ ВШЭ', style: 'partner-logo-1' })),
@@ -45744,4 +45744,4 @@ exports.WindowPropertiesProvider = ({ children, }) => {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=446ce979ee9071f5a306.js.map
+//# sourceMappingURL=457331c3d6b083764eb2.js.map
