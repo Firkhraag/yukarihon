@@ -43642,7 +43642,7 @@ const Lectorium = () => {
     // }
     return (react_1.default.createElement("div", { className: "text-centered", style: { marginTop: '8.5em' } },
         react_1.default.createElement("h1", { className: "link-head" },
-            react_1.default.createElement("a", { href: "https://vk.com/yukarium?z=video-184996744_456239056%2Fec5f294d4e341dacf9%2Fpl_wall_-184996744", style: { color: '#7e4399' } }, "\u0422\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u044F \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435")),
+            react_1.default.createElement("a", { href: "https://vk.com/im?sel=271552501&z=video-184996744_456239056%2Fe1bb41f7bdc4004ae7", style: { color: '#7e4399' } }, "\u0422\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u044F \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435")),
         react_1.default.createElement("h1", { className: "link-head", style: { marginTop: '0.5em' } },
             react_1.default.createElement("a", { href: "https://www.youtube.com/watch?v=Q4OZE4b2eQk&feature=emb_err_woyt&ab_channel=%D0%9B%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9%D0%AE%D0%BA%D0%B0%D1%80%D0%B8%E2%80%A2%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%D0%B2%D1%8D%D0%BF%D0%BE%D1%85%D1%83%D0%AD%D0%B4%D0%BE", style: { color: '#558bc8' } }, "\u0422\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u044F Youtube"))));
 };
@@ -45821,4 +45821,4 @@ exports.WindowPropertiesProvider = ({ children, }) => {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=25a05e0a463d9bd97770.js.map
+//# sourceMappingURL=de7dc720e8481de2b095.js.map
