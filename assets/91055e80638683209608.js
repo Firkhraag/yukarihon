@@ -43388,9 +43388,7 @@ const Faq = ({ buttonClick, openDonateDrawer }) => {
                                 } }, "\u0434\u043E\u0431\u0440\u043E\u0432\u043E\u043B\u044C\u043D\u044B\u043C \u043F\u043E\u0436\u0435\u0440\u0442\u0432\u043E\u0432\u0430\u043D\u0438\u044F\u043C"),
                             ", \u0442\u0430\u043A \u0438 \u0440\u0435\u043A\u043B\u0430\u043C\u0435 \u00AB\u042E\u043A\u0430\u0440\u0438\u00BB \u0432 \u0441\u043E\u0446\u0441\u0435\u0442\u044F\u0445."),
                         react_1.default.createElement("p", { className: "desktop-font line-height p-bottom-margin" }, "\u041B\u0443\u0447\u0448\u0438\u0439 \u0441\u043F\u043E\u0441\u043E\u0431 \u2013 \u0440\u0435\u043F\u043E\u0441\u0442\u043D\u0443\u0442\u044C \u0430\u043D\u043E\u043D\u0441 \u043B\u0435\u043A\u0442\u043E\u0440\u0438\u044F \u0432 \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435 \u0438 \u043F\u0440\u0438\u0433\u043B\u0430\u0441\u0438\u0442\u044C \u0434\u0440\u0443\u0437\u0435\u0439 \u0443\u0447\u0430\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C \u0432 \u043D\u0430\u0448\u0435\u043C \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0438."))))),
-        react_1.default.createElement("hr", null),
-        react_1.default.createElement("div", { className: "contact-us-cnt" },
-            react_1.default.createElement("div", { className: "contact-us text-centered pointer", onMouseEnter: () => setButtonHovered(true), onMouseLeave: () => setButtonHovered(false), onClick: buttonClick }, contactButtonText()))));
+        react_1.default.createElement("hr", null)));
 };
 exports.default = Faq;
 
@@ -43642,9 +43640,13 @@ const Lectorium = () => {
     // }
     return (react_1.default.createElement("div", { className: "text-centered", style: { marginTop: '8.5em' } },
         react_1.default.createElement("h1", { className: "link-head" },
-            react_1.default.createElement("a", { href: "https://vk.com/yukarium?z=video-184996744_456239057%2F2c54cfa91159c0b601%2Fpl_wall_-184996744", style: { color: '#7e4399' } }, "\u0422\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u044F \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435")),
+            react_1.default.createElement("a", { href: "https://www.youtube.com/watch?v=Q4OZE4b2eQk&ab_channel=%D0%9B%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9%D0%AE%D0%BA%D0%B0%D1%80%D0%B8%E2%80%A2%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%D0%B2%D1%8D%D0%BF%D0%BE%D1%85%D1%83%D0%AD%D0%B4%D0%BE", style: { color: '#7e4399' } }, "\u0414\u0435\u043D\u044C 1. Youtube")),
         react_1.default.createElement("h1", { className: "link-head", style: { marginTop: '0.5em' } },
-            react_1.default.createElement("a", { href: "https://www.youtube.com/watch?v=iTGMZiIVsWI&ab_channel=%D0%9B%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9%D0%AE%D0%BA%D0%B0%D1%80%D0%B8%E2%80%A2%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%D0%B2%D1%8D%D0%BF%D0%BE%D1%85%D1%83%D0%AD%D0%B4%D0%BE", style: { color: '#558bc8' } }, "\u0422\u0440\u0430\u043D\u0441\u043B\u044F\u0446\u0438\u044F Youtube"))));
+            react_1.default.createElement("a", { href: "https://www.youtube.com/watch?v=iTGMZiIVsWI&ab_channel=%D0%9B%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9%D0%AE%D0%BA%D0%B0%D1%80%D0%B8%E2%80%A2%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F%D0%B2%D1%8D%D0%BF%D0%BE%D1%85%D1%83%D0%AD%D0%B4%D0%BE", style: { color: '#558bc8' } }, "\u0414\u0435\u043D\u044C 2. Youtube")),
+        react_1.default.createElement("h1", { className: "link-head", style: { marginTop: '1em' } },
+            react_1.default.createElement("a", { href: "https://vk.com/yukarium?z=video-184996744_456239056%2F13bab29b43cfb7806e%2Fpl_wall_-184996744", style: { color: '#7e4399' } }, "\u0414\u0435\u043D\u044C 1. \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435")),
+        react_1.default.createElement("h1", { className: "link-head", style: { marginTop: '0.5em' } },
+            react_1.default.createElement("a", { href: "https://vk.com/yukarium?z=video-184996744_456239057%2F2c54cfa91159c0b601%2Fpl_wall_-184996744", style: { color: '#558bc8' } }, "\u0414\u0435\u043D\u044C 2. \u0412\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u0435"))));
 };
 exports.default = Lectorium;
 
@@ -44339,22 +44341,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-const axios_1 = __importDefault(__webpack_require__(/*! ../../axios */ "./src/axios.ts"));
 __webpack_require__(/*! ./RegisterForm.css */ "./src/components/RegisterForm/RegisterForm.css");
 const RegisterForm = ({ openPopup }) => {
     const [buttonPointerEventsDisabled, setButtonPointerEventsDisabled] = react_1.useState(false);
@@ -44402,7 +44390,9 @@ const RegisterForm = ({ openPopup }) => {
             return false;
         }
     };
-    const readyToBeSubmitted = checkName(inputValues.name) && checkEmail(inputValues.email);
+    // const readyToBeSubmitted =
+    // 	checkName(inputValues.name) && checkEmail(inputValues.email)
+    const readyToBeSubmitted = false;
     let buttonStyle = 'enabled submit absolute form-inputs-width grad-bg pointer white container border-radius';
     if (!readyToBeSubmitted) {
         buttonStyle =
@@ -44419,38 +44409,37 @@ const RegisterForm = ({ openPopup }) => {
             return '';
         }
     };
-    const submitButtonClickHandler = () => __awaiter(void 0, void 0, void 0, function* () {
-        if (readyToBeSubmitted) {
-            if (honeyPass === '') {
-                try {
-                    setButtonPointerEventsDisabled(true);
-                    yield axios_1.default.post('/add', {
-                        email: inputValues.email,
-                        username: inputValues.name,
-                    });
-                    // await httpClient.post('/test', {
-                    // 	email: inputValues.email,
-                    // 	username: inputValues.name,
-                    // })
-                    setSubmitButtonClicked(true);
-                    setTimeout(() => {
-                        // setSubmitButtonClicked(false)
-                        openPopup(true);
-                    }, 4500);
-                }
-                catch (e) {
-                    if (e.response.status === 409) {
-                        setButtonPointerEventsDisabled(false);
-                        openPopup(null);
-                        return;
-                    }
-                    setButtonPointerEventsDisabled(false);
-                    openPopup(false);
-                    console.log('Error occured!', e);
-                }
-            }
-        }
-    });
+    // const submitButtonClickHandler = async () => {
+    // 	if (readyToBeSubmitted) {
+    // 		if (honeyPass === '') {
+    // 			try {
+    //                 setButtonPointerEventsDisabled(true)
+    // 				await httpClient.post('/add', {
+    // 					email: inputValues.email,
+    // 					username: inputValues.name,
+    //                 })
+    //                 // await httpClient.post('/test', {
+    // 				// 	email: inputValues.email,
+    // 				// 	username: inputValues.name,
+    // 				// })
+    // 				setSubmitButtonClicked(true)
+    // 				setTimeout(() => {
+    // 					// setSubmitButtonClicked(false)
+    // 					openPopup(true)
+    // 				}, 4500)
+    // 			} catch (e) {
+    //                 if (e.response.status === 409) {
+    //                     setButtonPointerEventsDisabled(false)
+    //                     openPopup(null)
+    //                     return
+    //                 }
+    //                 setButtonPointerEventsDisabled(false)
+    //                 openPopup(false)
+    // 				console.log('Error occured!', e)
+    // 			}
+    // 		}
+    // 	}
+    // }
     return (react_1.default.createElement("div", { className: "margin-from-prev-comp" },
         react_1.default.createElement("h1", { className: "text-centered" }, "\u0420\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u044F"),
         react_1.default.createElement("div", { className: "form-reg flex-column-centered-row" },
@@ -44464,18 +44453,12 @@ const RegisterForm = ({ openPopup }) => {
                 react_1.default.createElement("input", { type: "text", name: "password", style: { display: 'none' }, tabIndex: -1, autoComplete: "off", onChange: onHoneyChange })),
             react_1.default.createElement("div", { className: getButtonStyle() },
                 react_1.default.createElement("div", { className: "button-wrapper container white full-width" },
-                    react_1.default.createElement("div", { className: buttonStyle, onClick: submitButtonClickHandler }, "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F"),
+                    react_1.default.createElement("div", { className: buttonStyle, onClick: null }, "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F"),
                     react_1.default.createElement("div", { className: "loader absolute loader-violet" }),
                     react_1.default.createElement("div", { className: "loader absolute loader-blue" }),
                     react_1.default.createElement("div", { className: "check-wrapper absolute" },
                         react_1.default.createElement("div", { className: "checkmark" }))),
-                react_1.default.createElement("p", { className: "form-inputs-width line-height text-centered", style: { marginBottom: '1em' } },
-                    "\u041D\u0430\u0436\u0438\u043C\u0430\u044F \u043D\u0430 \u043A\u043D\u043E\u043F\u043A\u0443, \u0432\u044B \u0434\u0430\u0435\u0442\u0435 \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0438 \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C c",
-                    ' ',
-                    react_1.default.createElement(react_router_dom_1.Link, { to: "/policy" }, "\u043F\u043E\u043B\u0438\u0442\u0438\u043A\u043E\u0439 \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438"),
-                    ",",
-                    react_1.default.createElement("br", null),
-                    "\u0430 \u0442\u0430\u043A\u0436\u0435 \u043F\u043E\u0434\u043F\u0438\u0441\u044B\u0432\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u0440\u0430\u0441\u0441\u044B\u043B\u043A\u0443 \u0441\u0432\u0435\u0436\u0438\u0445 \u043D\u043E\u0432\u043E\u0441\u0442\u0435\u0439 \u043D\u0430\u0448\u0435\u0433\u043E \u043F\u0440\u043E\u0435\u043A\u0442\u0430 \u0438 \u043D\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0439 \u043E \u0441\u043E\u0431\u044B\u0442\u0438\u0438.")))));
+                react_1.default.createElement("p", { className: "form-inputs-width line-height text-centered", style: { marginBottom: '1em' } }, "\u041C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0435 \u0443\u0436\u0435 \u043F\u0440\u043E\u0448\u043B\u043E")))));
 };
 exports.default = RegisterForm;
 
@@ -45821,4 +45804,4 @@ exports.WindowPropertiesProvider = ({ children, }) => {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bc0616d58d8cbb23da94.js.map
+//# sourceMappingURL=91055e80638683209608.js.map
