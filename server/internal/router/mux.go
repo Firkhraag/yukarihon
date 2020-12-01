@@ -82,6 +82,21 @@ func (r *router) STATIC(dir string, uris []string) {
 	}).Methods("GET")
 }
 
+func (r *router) STATIC2(dir string) {
+	// Static files
+	fileServer := http.FileServer(http.Dir(dir))
+	// r.mux.Handle("/api/660401b2-4e2b-4968-8b46-3a83dd2a724d738a66fa-9f70-45b2-a29e-fbd8f524233fbf595db0-ace0-48d5-b546-472863de1e6d411a83b5-a8a4-47e0-9f2d-7e8ba7979342", fileServer).Methods("GET")
+
+	r.mux.Handle("/api/663a83dd2a724d738a66fafbd8f524233fbf595db0472863de1e6d411a83b5", http.StripPrefix("/api/663a83dd2a724d738a66fafbd8f524233fbf595db0472863de1e6d411a83b5", fileServer)).Methods("GET")
+	r.mux.PathPrefix("/assets/").Handler(
+		http.StripPrefix("/assets/",
+			http.FileServer(
+				http.Dir(fmt.Sprintf("%s/assets", dir)),
+			),
+		),
+	).Methods("GET")
+}
+
 // Starting the server
 func (r *router) SERVE(port string, idleTimeout uint16, readTimeout uint16, writeTimeout uint16) {
 	headers := handlers.AllowedHeaders([]string{"X-Requested-With", "Content-Type", "Authorization"})
@@ -98,9 +113,9 @@ func (r *router) SERVE(port string, idleTimeout uint16, readTimeout uint16, writ
 	// Goroutine for graceful shutdown
 	go func() {
 		// Production
-		if err := s.ListenAndServeTLS("/app/letsencrypt/fullchain.pem", "/app/letsencrypt/privkey.pem"); err != nil {
-			// Development
-			// if err := s.ListenAndServe(); err != nil {
+		// if err := s.ListenAndServeTLS("/app/letsencrypt/fullchain.pem", "/app/letsencrypt/privkey.pem"); err != nil {
+		// Development
+		if err := s.ListenAndServe(); err != nil {
 			log.Fatal(err)
 		}
 	}()

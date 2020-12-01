@@ -103,7 +103,7 @@ const Partners = () => {
 	return (
 		<div className="margin-from-prev-comp">
 			<div className="partners relative">
-                <h1 className="text-centered">Наши партнеры</h1>
+                <h1 className="text-centered">Полезные ссылки</h1>
 				{/* {arrowsNotNeeded ? (
 					<div className="hide" />
 				) : (
@@ -140,13 +140,6 @@ const Partners = () => {
 					</li>
 					<li>
                         <PartnerCard 
-                            img={cultureCenter}
-                            site={'https://cc.hse.ru/'}
-                            name={'Культурный центр НИУ ВШЭ'}
-                            style={'partner-logo-6'} />
-					</li>
-					<li>
-                        <PartnerCard 
                             img={association}
                             site={'http://japanstudies.ru/'}
                             name={'Ассоциация японоведов'}
@@ -156,7 +149,7 @@ const Partners = () => {
 						<PartnerCard 
                             img={japFound}
                             site={'https://jpfmw.ru/'}
-                            name={'Отдел японской культуры «JapanFoundation»'}
+                            name={'Отдел японской культуры «Japan Foundation»'}
                             style={'partner-logo-7'} />
 					</li>
 				</ul>

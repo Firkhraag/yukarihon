@@ -26,14 +26,10 @@ const Home = () => {
 			<p className="subhead">28–29 ноября 2020</p>
 			<Link
                 className="text-centered pointer bold"
-				to="about"
+				to="schedule"
 				smooth={true}
-				offset={80}
+				offset={0}
 				duration={500}
-				// to="lectorium"
-				// smooth={true}
-				// offset={-150}
-				// duration={500}
 				onMouseEnter={() => setButtonHovered(true)}
 				onMouseLeave={() => setButtonHovered(false)}
 			>

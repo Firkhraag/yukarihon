@@ -1,0 +1,23 @@
+.finish-popup {
+    width: 300px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-left: -150px;
+    padding: 2em;
+    z-index: 500;
+    box-shadow: -1px 0 5px 1px rgba(0, 0, 0, .5);
+}
+
+@media only screen and (max-width: 500px) {
+    .finish-popup {
+        width: 240px;
+        margin-left: -140px;
+    }
+    .finish-logo {
+        width: 195px;
+    }
+    .finish-popup h1 {
+        font-size: 1.5em;
+    }
+}

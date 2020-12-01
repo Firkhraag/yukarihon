@@ -12,6 +12,8 @@ import Backdrop from './components/Backdrop/Backdrop'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Partners from './components/Partners/Partners'
 import Footer from './components/Footer/Footer'
+import Popup from './components/Popup/Popup'
+import Schedule from './components/Schedule/Schedule'
 import DonateDrawer from './components/DonateDrawer/DonateDrawer'
 
 const Root = () => {
@@ -46,7 +48,11 @@ const Root = () => {
 		onSwipedRight: (eventData) => {
 			setDonateDrawerOpen(false)
 		},
-	})
+    })
+    
+
+    const [isSuccess, setSuccess] = useState(false)
+    const [isPopupShown, setPopupShown] = useState(false)
 
 	return (
 		<div>
@@ -58,6 +64,7 @@ const Root = () => {
 				exitClick={() => setDonateDrawerOpen(false)}
 				isShown={isDonateDrawerOpen}
 			/>
+            <Popup isShown={isPopupShown} isSuccess={isSuccess} closeFunc={() => setPopupShown(false)} />
 			<div onClick={() => setDonateDrawerOpen(false)} {...swipeHandler}>
 				<SideDrawer
 					closeButtonClick={closeToggleClickHandler}
@@ -68,6 +75,9 @@ const Root = () => {
 					exitClick={closeToggleClickHandler}
 					isAskFormShown={isAskFormShown}
 				/>
+                <Element name="lectorium">
+					<Lectorium />
+				</Element>
 				<Element name="home">
 					<Home />
 				</Element>
@@ -77,8 +87,14 @@ const Root = () => {
 				<Element name="about_team">
 					<AboutWithPhotos />
 				</Element>
+                <Element name="schedule">
+					<Schedule />
+				</Element>
                 <Element name="register">
-					<RegisterForm />
+					<RegisterForm openPopup={(isSuccess: boolean) => {
+                        setSuccess(isSuccess)
+                        setPopupShown(true)
+                    }} />
 				</Element>
 				{/* <Element name="lectorium">
 					<Lectorium />

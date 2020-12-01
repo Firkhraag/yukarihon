@@ -1,18 +1,40 @@
 .youtube {
-    width: 50vw;
-    height: 450px;
+    width: 66vw;
+    height: 555px;
+    /* height: 75vh; */
+}
+
+.link-head {
+    font-size: 3em;
 }
 
 @media only screen and (max-width: 1080px) {
     .youtube {
-        width: 60vw;
-        height: 400px;
+        width: 70vw;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .youtube {
+        width: 75vw;
+        height: 420px;
     }
 }
 
 @media only screen and (max-width: 800px) {
     .youtube {
-        width: 70vw;
+        width: 77vw;
+        height: 400px;
+    }
+    .link-head {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .youtube {
+        width: 78vw;
         height: 350px;
     }
 }
@@ -21,5 +43,8 @@
     .youtube {
         width: 80vw;
         height: 300px;
+    }
+    .link-head {
+        font-size: 2em;
     }
 }

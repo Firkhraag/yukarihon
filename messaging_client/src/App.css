@@ -1,0 +1,47 @@
+textarea {
+    resize: none;
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+input {
+    width: 50vw;
+    border: 1px solid #666;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+button {
+    width: 50vw;
+    cursor: pointer;
+    padding: 1em;
+    outline: none;
+    background: #ddd;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background: #aaa;
+}
+
+h1 {
+    margin-bottom: .75em;
+}
+
+h2 {
+    margin-bottom: .25em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}

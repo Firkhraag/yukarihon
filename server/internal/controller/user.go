@@ -2,12 +2,15 @@ package controller
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/firkhraag/yukari/internal/custom_error"
 	"github.com/firkhraag/yukari/internal/model"
 	"github.com/firkhraag/yukari/internal/service"
+	"github.com/gorilla/mux"
 )
 
 type userController struct {
@@ -27,12 +30,12 @@ func (c *userController) GetAll(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(custom_error.ErrorMessage{Message: "Couldn't get users"})
-		log.Println("HTTP POST /api/add responded 500")
+		log.Println("HTTP POST /api/getall responded 500")
 		return
 	}
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(users)
-	log.Println("HTTP POST /api/add responded 200")
+	log.Println("HTTP POST /api/getall responded 200")
 }
 
 func (c *userController) Add(w http.ResponseWriter, r *http.Request) {
@@ -64,4 +67,29 @@ func (c *userController) Add(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	json.NewEncoder(w).Encode(u)
 	log.Println("HTTP POST /api/add responded 200")
+}
+
+func (c *userController) Unsubscribe(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	idStr := vars["id"]
+	id, convErr := strconv.Atoi(idStr)
+	if convErr != nil {
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusBadRequest)
+		log.Println("HTTP POST /api/unsubscribe responded 400")
+		json.NewEncoder(w).Encode(custom_error.ErrorMessage{Message: "Wrong user id"})
+		return
+	}
+	key := vars["key"]
+	err := c.service.Unsubscribe(id, key)
+	if err != nil {
+		w.Header().Add("Content-Type", "application/json")
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Println("HTTP POST /api/unsubscribe responded 500")
+		json.NewEncoder(w).Encode(custom_error.ErrorMessage{Message: "Couldn't unsubscribe a user"})
+		return
+	}
+	w.WriteHeader(http.StatusOK)
+	fmt.Fprintf(w, "Вы были успешно отписаны")
+	log.Println("HTTP POST /api/unsubscribe responded 200")
 }

@@ -94,11 +94,11 @@ const Faq = ({ buttonClick, openDonateDrawer }: FaqProps) => {
 						<br />
 						<br />
 						Мы занимаемся организацией лектория, а выступать будут
-						преподаватели Института классического Востока и
-						Античности НИУ ВШЭ, Школы востоковедения НИУ ВШЭ,
-						Института стран Азии и Африки МГУ, Института
+						преподаватели и сотрудники Института классического
+						Востока и Античности НИУ ВШЭ, Школы востоковедения НИУ
+						ВШЭ, Института стран Азии и Африки МГУ, Института
 						востоковедения РАН, Института восточных рукописей РАН и
-						других учебных заведений.
+						других учебных и научных учреждений.
 						<br />
 						<br />
 						<a
@@ -117,14 +117,18 @@ const Faq = ({ buttonClick, openDonateDrawer }: FaqProps) => {
 			answer: (
 				<div>
 					<p className="desktop-font line-height p-bottom-margin">
-						Всё просто! Вы <Link
-                        className="pointer"
-                        style={{ color: '#551a8b' }}
-						to="register"
-						smooth={true}
-						offset={-155}
-						duration={300}>регистрируетесь</Link> и
-						проверяете почту, а 28-29 ноября входите на сайт и
+						Всё просто! Вы{' '}
+						<Link
+							className="pointer"
+							style={{ color: '#551a8b' }}
+							to="register"
+							smooth={true}
+							offset={-155}
+							duration={300}
+						>
+							регистрируетесь
+						</Link>{' '}
+						и проверяете почту, а 28-29 ноября входите на сайт и
 						подключаетесь к онлайн-лекциям.
 					</p>
 				</div>
@@ -358,7 +362,7 @@ const Faq = ({ buttonClick, openDonateDrawer }: FaqProps) => {
 				</animated.div>
 			</div>
 			<hr />
-			<div className="contact-us-cnt">
+			{/* <div className="contact-us-cnt">
 				<div
 					className="contact-us text-centered pointer"
 					onMouseEnter={() => setButtonHovered(true)}
@@ -367,7 +371,7 @@ const Faq = ({ buttonClick, openDonateDrawer }: FaqProps) => {
 				>
 					{contactButtonText()}
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

@@ -47,10 +47,6 @@
 	height: 200px;
 }
 
-.form-reg img {
-	width: 45%;
-}
-
 .form-reg .input-margin-bottom {
 	margin-bottom: 1.25em;
 }
@@ -114,6 +110,10 @@
 	color: rgba(255, 255, 255, 0);
 	animation: submit-anim 4s cubic-bezier(0.39, 0.575, 0.565, 1);
 	pointer-events: none;
+}
+
+.disabled-pnt-events {
+    pointer-events: none;
 }
 
 @keyframes submit-anim {

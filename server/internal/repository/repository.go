@@ -7,4 +7,5 @@ type UserRepository interface {
 	GetAll() ([]*model.User, error)
 	GetByEmail(email string) (*model.User, error)
 	Add(user *model.User) error
+	Unsubscribe(id int, key string) error
 }

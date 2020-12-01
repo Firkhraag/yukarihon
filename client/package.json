@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/emoji-mart": "^3.0.2",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/react-scroll": "^1.8.0",
@@ -33,11 +32,9 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "emoji-mart": "^3.0.0",
     "history": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-expanding-textarea": "^2.2.3",
     "react-image": "^4.0.3",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scroll": "^1.8.1",

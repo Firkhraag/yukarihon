@@ -23,22 +23,23 @@ var (
 func main() {
 
 	log.Println("Starting the program")
+	log.Println(os.Getenv("POSTGRES_PASSWORD"))
 
 	// Default port is :8080
 	if port == "" {
-		port = "5000"
+		port = "8080"
 	}
 
 	// Development
-	// databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
+	databaseURL := "host=localhost user=postgres password=password dbname=yukari sslmode=disable"
 
 	// Production
-	databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
-		"postgres",
-		"password",
-		"postgres",
-		"yukari",
-	)
+	// databaseURL := fmt.Sprintf("user=%s password=%s host=%s dbname=%s sslmode=disable",
+	// 	"postgres",
+	// 	os.Getenv("POSTGRES_PASSWORD"),
+	// 	"localhost",
+	// 	"yukari",
+	// )
 
 	db, err := sql.Open("postgres", databaseURL)
 	if err != nil {
@@ -60,6 +61,9 @@ func main() {
 	questionService := service.NewQuestionService(sendgridService)
 	questionController := controller.NewQuestionController(questionService)
 
+	sendService := service.NewSendService(sendgridService, userService)
+	sendController := controller.NewSendController(sendService)
+
 	// CORS
 	// r.CORS([]string{
 	// 	fmt.Sprintf("http://localhost:%s", port),
@@ -71,9 +75,15 @@ func main() {
 	// r.USE(CORS)
 
 	// Client endpoints and static files
-	// r.STATIC("../public", []string{
-	// 	"/policy",
-	// })
+
+	// Development
+	r.STATIC("../public", []string{
+		"/policy",
+	})
+
+	// Production and development
+	r.STATIC2("../dist")
+	r.POST("/api/send", sendController.SendMail)
 
 	// Server endpoints
 	r.GET(
@@ -88,6 +98,9 @@ func main() {
 		"/api/users/fa63ee1067bdbc0-4121-43b2-b7c5-742c2dbbd0dd830f33c7-9cbd-4fc8-bae1-2cc46a378dcc20b0834f-3c76-41e1-a133-f50fd382621ce6307038",
 		userController.GetAll,
 	)
+
+	r.GET("/api/users/{id:[0-9]+}/unsubscribe/{key}", userController.Unsubscribe)
+
 	r.POST("/api/add", userController.Add)
 	r.POST("/api/ask", questionController.AskQuestion)
 

@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom'
 import httpClient from '../../axios'
 import './RegisterForm.css'
 
-const RegisterForm = () => {
+type RegisterFormProps = {
+	openPopup: (isSuccess: boolean) => void
+}
+
+const RegisterForm = ({ openPopup }: RegisterFormProps) => {
+	const [buttonPointerEventsDisabled, setButtonPointerEventsDisabled] = useState(false)
 	const [submitButtonClicked, setSubmitButtonClicked] = useState(false)
 	const [inputValues, setInputValues] = useState({
 		name: '',
@@ -48,8 +53,9 @@ const RegisterForm = () => {
 		}
 	}
 
-	const readyToBeSubmitted =
-		checkName(inputValues.name) && checkEmail(inputValues.email)
+	// const readyToBeSubmitted =
+    // 	checkName(inputValues.name) && checkEmail(inputValues.email)
+    const readyToBeSubmitted = false
 
 	let buttonStyle =
 		'enabled submit absolute form-inputs-width grad-bg pointer white container border-radius'
@@ -62,28 +68,44 @@ const RegisterForm = () => {
 		if (submitButtonClicked) {
 			return ' checked'
 		} else {
+            if (buttonPointerEventsDisabled) {
+                return ' disabled-pnt-events'
+            }
 			return ''
 		}
 	}
 
-	const submitButtonClickHandler = async () => {
-		if (readyToBeSubmitted) {
-			if (honeyPass === '') {
-				try {
-					await httpClient.post('/add', {
-						email: inputValues.email,
-						username: inputValues.name,
-					})
-					setSubmitButtonClicked(!submitButtonClicked)
-					// setTimeout(() => {
-                    //     setSubmitButtonClicked(false)
-					// }, 4500)
-				} catch (e) {
-					console.log('Error occured!')
-				}
-			}
-		}
-	}
+	// const submitButtonClickHandler = async () => {
+	// 	if (readyToBeSubmitted) {
+	// 		if (honeyPass === '') {
+	// 			try {
+    //                 setButtonPointerEventsDisabled(true)
+	// 				await httpClient.post('/add', {
+	// 					email: inputValues.email,
+	// 					username: inputValues.name,
+    //                 })
+    //                 // await httpClient.post('/test', {
+	// 				// 	email: inputValues.email,
+	// 				// 	username: inputValues.name,
+	// 				// })
+	// 				setSubmitButtonClicked(true)
+	// 				setTimeout(() => {
+	// 					// setSubmitButtonClicked(false)
+	// 					openPopup(true)
+	// 				}, 4500)
+	// 			} catch (e) {
+    //                 if (e.response.status === 409) {
+    //                     setButtonPointerEventsDisabled(false)
+    //                     openPopup(null)
+    //                     return
+    //                 }
+    //                 setButtonPointerEventsDisabled(false)
+    //                 openPopup(false)
+	// 				console.log('Error occured!', e)
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	return (
 		<div className="margin-from-prev-comp">
@@ -129,7 +151,7 @@ const RegisterForm = () => {
 					<div className="button-wrapper container white full-width">
 						<div
 							className={buttonStyle}
-							onClick={submitButtonClickHandler}
+							onClick={null}
 						>
 							Зарегистрироваться
 						</div>
@@ -139,13 +161,19 @@ const RegisterForm = () => {
 							<div className="checkmark" />
 						</div>
 					</div>
-					<p
+					{/* <p
 						className="form-inputs-width line-height text-centered"
 						style={{ marginBottom: '1em' }}
 					>
 						Нажимая на кнопку, вы даете согласие на обработку
 						персональных данных и соглашаетесь c{' '}
-						<Link to="/policy">политикой конфиденциальности</Link>
+						<Link to="/policy">политикой конфиденциальности</Link>,<br />а также подписываетесь на рассылку свежих новостей нашего проекта и напоминаний о событии.
+					</p> */}
+                    <p
+						className="form-inputs-width line-height text-centered"
+						style={{ marginBottom: '1em' }}
+					>
+						Мероприятие уже прошло
 					</p>
 				</div>
 			</div>

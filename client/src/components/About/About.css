@@ -35,6 +35,64 @@
     background-size: 100%;
 }
 
+.gallery-img {
+    width: 285px;
+    height: 190px;
+}
+
+.gallery-cnt-grid {
+    display: grid;
+	grid-gap: 30px;
+	overflow-x: scroll;
+	scroll-snap-type: x proximity;
+	padding: 1.9em 0 2.2em 0;
+    scrollbar-width: none;
+    grid-template-columns: 0.1px 285px 285px 285px 285px 285px 285px 285px 285px 285px 285px 0.1px;
+}
+
+.gallery-cnt-grid::-webkit-scrollbar {
+	display: none;
+}
+
+.gallery-cnt-grid:before,
+.gallery-cnt-grid:after {
+	content: '';
+}
+
+.gallery-arrow-left,
+.gallery-arrow-right {
+    position: absolute;
+	top: 26%;
+	width: 60px;
+	opacity: 0.5;
+    z-index: 25;
+    height: 40px;
+    width: 40px;
+}
+
+.gallery-arrow-right {
+    padding: 2em 0 2em 2em;
+}
+
+.gallery-arrow-left {
+    padding: 2em 2em 2em 0;
+}
+
+.gallery-arrow-left:hover,
+.gallery-arrow-right:hover {
+	opacity: 1;
+}
+
+.gallery-arrow-right {
+	right: 0;
+	animation: arrow-right 2s linear infinite;
+}
+
+.gallery-arrow-left {
+	left: 0;
+	animation: arrow-left 2s linear infinite;
+}
+
 @media only screen and (min-width: 1500px) {
     .wave-cnt {
         height: 250px;

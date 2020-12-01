@@ -7,7 +7,7 @@ services:
             - migration
         # image: "firkhraag/yukari"
         build:
-            context: ./server
+            context: .
             dockerfile: Dockerfile
         ports:
             - "${PORT}:${PORT}"
@@ -17,21 +17,21 @@ services:
         volumes:
             - /etc/letsencrypt/live/yukarihon.ru/fullchain.pem:/app/letsencrypt/fullchain.pem
             - /etc/letsencrypt/live/yukarihon.ru/privkey.pem:/app/letsencrypt/privkey.pem
-    migration:
-        depends_on:
-            - postgres
-        # image: "firkhraag/yukari-migration"
-        build:
-            context: ./migration
-            dockerfile: Dockerfile
-    postgres:
-        restart: always
-        image: "postgres:alpine"
-        ports:
-            - "5432:5432"
-        environment:
-            - POSTGRES_USER=postgres
-            - POSTGRES_PASSWORD=password
-            - POSTGRES_DB=yukari
+    # migration:
+    #     depends_on:
+    #         - postgres
+    #     # image: "firkhraag/yukari-migration"
+    #     build:
+    #         context: ./migration
+    #         dockerfile: Dockerfile
+    # postgres:
+    #     restart: always
+    #     image: "postgres:alpine"
+    #     ports:
+    #         - "5432:5432"
+    #     environment:
+    #         - POSTGRES_USER=postgres
+    #         - POSTGRES_PASSWORD=password
+    #         - POSTGRES_DB=yukari
         # volumes:
         #     - /private/var/lib/postgresql:/var/lib/postgresql

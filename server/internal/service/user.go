@@ -33,8 +33,8 @@ func (s *userService) Add(user *model.User) (*model.User, error) {
 	if err := s.repository.Add(user); err != nil {
 		return nil, err
 	}
-	s.mailService.SendEmail(
-		"Yukari",
+	s.mailService.SendEmailPlain(
+		"Лекторий Юкари",
 		"yukari.lectorium@gmail.com",
 		user.Username,
 		user.Email,
@@ -42,4 +42,8 @@ func (s *userService) Add(user *model.User) (*model.User, error) {
 		"Регистрация прошла успешно!\n\nС уважением,\nКоманда Юкари",
 	)
 	return user, nil
+}
+
+func (s *userService) Unsubscribe(id int, key string) error {
+	return s.repository.Unsubscribe(id, key)
 }

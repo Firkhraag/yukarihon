@@ -24,7 +24,7 @@
 }
 
 .cards-cnt-grid1 {
-	grid-template-columns: 0.1px 233px 233px 233px 233px 0.1px;
+	grid-template-columns: 0.1px 233px 233px 233px 0.1px;
 }
 
 .cards-cnt-grid2 {

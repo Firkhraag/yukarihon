@@ -11,5 +11,6 @@ type Router interface {
 	USE(f func(next http.Handler) http.Handler)
 	CORS(origins []string)
 	STATIC(dir string, uris []string)
+	STATIC2(dir string)
 	SERVE(port string, idleTimeout uint16, readTimeout uint16, writeTimeout uint16)
 }

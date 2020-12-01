@@ -19,7 +19,7 @@ func NewPgUserRepository(db *sql.DB) UserRepository {
 }
 
 func (r *pgUserRepository) GetAll() ([]*model.User, error) {
-	rows, err := r.db.Query("SELECT id, username, email, date FROM users ORDER BY date DESC")
+	rows, err := r.db.Query("SELECT id, username, email, date, subscribed, key FROM users ORDER BY date DESC")
 	if err != nil {
 		return nil, err
 	}
@@ -30,7 +30,7 @@ func (r *pgUserRepository) GetAll() ([]*model.User, error) {
 	for rows.Next() {
 		count++
 		u := &model.User{}
-		err := rows.Scan(&u.ID, &u.Username, &u.Email, &u.Date)
+		err := rows.Scan(&u.ID, &u.Username, &u.Email, &u.Date, &u.Subscribed, &u.Key)
 		if err != nil {
 			return nil, err
 		}
@@ -46,8 +46,8 @@ func (r *pgUserRepository) GetAll() ([]*model.User, error) {
 func (r *pgUserRepository) GetByEmail(email string) (*model.User, error) {
 	u := &model.User{}
 	if err := r.db.QueryRow(
-		"SELECT id, username, email, date FROM users WHERE email = $1", email).Scan(
-		&u.ID, &u.Username, &u.Email, &u.Date); err != nil {
+		"SELECT id, username, email, date, subscribed, key FROM users WHERE email = $1", email).Scan(
+		&u.ID, &u.Username, &u.Email, &u.Date, &u.Subscribed, &u.Key); err != nil {
 		if err == sql.ErrNoRows {
 			return nil, errors.New("User not found")
 		}
@@ -61,4 +61,13 @@ func (r *pgUserRepository) Add(user *model.User) error {
 		"INSERT INTO users (username, email) VALUES ($1, $2) RETURNING id",
 		user.Username, user.Email,
 	).Scan(&user.ID)
+}
+
+func (r *pgUserRepository) Unsubscribe(id int, key string) error {
+	sqlStatement := `UPDATE users SET subscribed = FALSE WHERE id = $1 AND key = $2;`
+	_, err := r.db.Exec(sqlStatement, id, key)
+	if err != nil {
+		return err
+	}
+	return nil
 }

@@ -14,7 +14,7 @@ const AboutWithPhotos = () => {
 		isShown2: false,
 		isShown3: false,
 		isShown4: false,
-		isShown5: false
+		isShown5: false,
 	}
 	const [descShownState, setDescShownState] = useState(defaultState)
 
@@ -35,9 +35,9 @@ const AboutWithPhotos = () => {
 			case 5:
 				setDescShownState({ ...defaultState, isShown5: true })
 				break
-            default:
-                setDescShownState(defaultState)
-                break
+			default:
+				setDescShownState(defaultState)
+				break
 		}
 	}
 
@@ -60,7 +60,7 @@ const AboutWithPhotos = () => {
 				посетило более 300 участников.
 				<br />
 				<br />
-				После мероприятия студенты и школьники влились в 6
+				После мероприятия студенты и школьники влились в 5
 				японистических проектов:
 			</p>
 			<div className="about-img-cnt">
@@ -68,46 +68,46 @@ const AboutWithPhotos = () => {
 					img={emperor}
 					title="«Повесть об Императоре»"
 					desc="Страница ВКонтакте, посвящённая средневековой Японии. Мы освещаем неоднозначные проблемы изучения сёгуната Камакура и Муромати, героев реставрации Кэмму и военачальников Сэнгоку, театр и конфуцианских авторов, буддийских наставников и законодателей Японии XII-XVI веков! Также проводим стримы и публикуем обзоры тематической литературы."
-                    style="about-img1"
-                    isDescShown={descShownState.isShown1}
-                    setDescShown={() => setDescShown(1)}
-                    setDescClose={() => setDescShown(-1)}
+					style="about-img1"
+					isDescShown={descShownState.isShown1}
+					setDescShown={() => setDescShown(1)}
+					setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
 					img={discussionClub}
 					title="Научно-дискуссионный клуб по Японии"
 					desc="Клуб для обсуждения широкого спектра проблем японистики в целом, а также пространство самореализации как начинающих исследователей Японии, так и опытных японистов. Платформа для дискуссий, докладов и семинаров от студентов!"
-                    style="about-img2"
-                    isDescShown={descShownState.isShown2}
-                    setDescShown={() => setDescShown(2)}
-                    setDescClose={() => setDescShown(-1)}
+					style="about-img2"
+					isDescShown={descShownState.isShown2}
+					setDescShown={() => setDescShown(2)}
+					setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
 					img={karuta}
 					title="Московский карута-клуб"
 					desc="Кё:ги карута – соревновательная карточная игра, популярная в Японии. Участники встречаются каждые выходные, чтобы совершенствоваться в искусстве сложения строф из строчек великих японских поэтов – в этом и заключается суть игры. Чемпионаты и встречи, дружные единомышленники и карута – добро пожаловать!"
-                    style="about-img2"
-                    isDescShown={descShownState.isShown3}
-                    setDescShown={() => setDescShown(3)}
-                    setDescClose={() => setDescShown(-1)}
+					style="about-img2"
+					isDescShown={descShownState.isShown3}
+					setDescShown={() => setDescShown(3)}
+					setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
 					img={eiga}
 					title="Киноклуб «Boku no eiga»"
 					desc="Почти домашний киноклуб, по совместительству блог. В нашем объективе японское кино. Встречаемся по пятницам, пьем тёплый чай, смотрим кино и устраиваем обсуждение. Так это было на протяжении 2019-2020 учебного года. Проект завершился, дав почву для глубоких размышлений и оставив тёплые воспоминания."
-                    style="about-img2"
-                    isDescShown={descShownState.isShown4}
-                    setDescShown={() => setDescShown(4)}
-                    setDescClose={() => setDescShown(-1)}
+					style="about-img2"
+					isDescShown={descShownState.isShown4}
+					setDescShown={() => setDescShown(4)}
+					setDescClose={() => setDescShown(-1)}
 				/>
 				<AboutProject
 					img={culture}
 					title="Неделя японской культуры в Лицее НИУ ВШЭ"
 					desc="Знакомство с традиционными японскими сладостями, совместный просмотр классиков японской анимации и кинематографа, лекция по стереотипам об истории Японии – проект лицеистов НИУ ВШЭ направления «Востоковедение», успешно завершившийся и подаривший бурю эмоций не только организаторам, но и участникам."
-                    style="about-img2"
-                    isDescShown={descShownState.isShown5}
-                    setDescShown={() => setDescShown(5)}
-                    setDescClose={() => setDescShown(-1)}
+					style="about-img2"
+					isDescShown={descShownState.isShown5}
+					setDescShown={() => setDescShown(5)}
+					setDescClose={() => setDescShown(-1)}
 				/>
 				{/* <AboutProject
                     title="Команда «Юкари»"
@@ -119,6 +119,13 @@ const AboutWithPhotos = () => {
 				единомышленники, по уши влюблённые в Японию. В нашем составе
 				студенты и школьники, готовые и шутку пошутить, и крупнейшее
 				образовательное событие по Японии провести.
+                <br />
+				<br />
+                Мы занимаемся организацией лектория, а выступать будут
+				преподаватели и сотрудники Института классического Востока и
+				Античности НИУ ВШЭ, Школы востоковедения НИУ ВШЭ, Института
+				стран Азии и Африки МГУ, Института востоковедения РАН, Института
+				восточных рукописей РАН и других учебных и научных учреждений.
 			</p>
 		</div>
 	)
